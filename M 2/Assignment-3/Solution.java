@@ -6,8 +6,8 @@ public class Solution {
 	Do not modify this main function.
 	*/
 	public static void main(final String[] args) {
-		Scanner s = new Scanner(System.in);      
-        int base = s.nextInt();
+		Scanner s = new Scanner(System.in);
+		int base = s.nextInt();
         int exponent = s.nextInt();
         long result = power(base, exponent);
         System.out.println(result);
