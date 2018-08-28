@@ -19,6 +19,6 @@ public class Solution {
 	static void rootsOfQuadraticEquation(int a, int b, int c) {
 		double proot = (-1 * b + Math.sqrt(b * b - 4 * a * c)) / (2 * a);
 		double nroot = (-1 * b - Math.sqrt(b * b - 4 * a * c)) / (2 * a);
-		System.out.println(" positive root is : " + proot + "\n" + " negative root is : " + nroot);
+		System.out.println(proot + " " + nroot);
 	}
 }
