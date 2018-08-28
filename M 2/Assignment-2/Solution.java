@@ -3,7 +3,7 @@ import java.util.Scanner;
 /**
 @author Mahateja
 */
-public class Solution {
+public final class Solution {
     /*
     Do not modify this main function.
     */
@@ -19,7 +19,7 @@ public class Solution {
         int a = scan.nextInt();
         int b = scan.nextInt();
         int c = scan.nextInt();
-        rootsOfQuadraticEquation(a, b, c);
+        rootsOfQuadratic(a, b, c);
         //System.out.println(rootsOfQuadraticEquation(a, b, c));
     }
     /**
@@ -29,7 +29,7 @@ public class Solution {
     @param b int
     @param c int
     */
-    static void rootsOfQuadraticEquation(final int a, final int b, final int c) {
+    static void rootsOfQuadratic(final int a, final int b, final int c) {
         final int t = 4;
     double proot = (-1 * b + Math.sqrt(b * b - t * a * c)) / (2 * a);
     double nroot = (-1 * b - Math.sqrt(b * b - t * a * c)) / (2 * a);
