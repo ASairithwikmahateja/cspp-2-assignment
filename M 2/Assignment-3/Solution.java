@@ -9,13 +9,13 @@ public class Solution {
 		Scanner s = new Scanner(System.in);      
         int base = s.nextInt();
         int exponent = s.nextInt();
-        int result = power(base, exponent);
+        long result = power(base, exponent);
         System.out.println(result);
 	}
 	/*
 	Need to write the power function and print the output.
 	*/
-	static int power(int base, int exponent) {
+	static long power(int base, int exponent) {
 		if (exponent == 0) {
 			int pow = 1;
 			return pow; }
@@ -23,7 +23,7 @@ public class Solution {
 			int pow = base;
 			return pow; }
 		else {
-			int pow = base * power(base, exponent - 1);
+			long pow = base * power(base, exponent - 1);
 			return pow; }
 	}
 }
