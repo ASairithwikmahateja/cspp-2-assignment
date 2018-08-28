@@ -7,6 +7,13 @@ public class Solution {
     /*
     Do not modify this main function.
     */
+    /**
+    @default constructor
+    */
+    private Solution() { }
+    /**
+    @param  args string
+    */
     public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         int a = scan.nextInt();
@@ -15,9 +22,12 @@ public class Solution {
         rootsOfQuadraticEquation(a, b, c);
         //System.out.println(rootsOfQuadraticEquation(a, b, c));
     }
-    /*
+    /**
     Need to write the rootsOfQuadraticEquation
     function and print the output.
+    @param a int
+    @param b int
+    @param c int
     */
     static void rootsOfQuadraticEquation(final int a, final int b, final int c) {
     	final int t = 4;
