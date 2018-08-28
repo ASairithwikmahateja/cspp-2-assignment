@@ -14,7 +14,7 @@ public class Solution {
 		//System.out.println(rootsOfQuadraticEquation(a, b, c));
 	}
 	/*
-	Need to write the rootsOfQuadraticEquation 
+	Need to write the rootsOfQuadraticEquation
 	function and print the output.
 	*/
 	static void rootsOfQuadraticEquation(int a, int b, int c) {
