@@ -2,10 +2,10 @@ import java.util.Scanner;
 import java.lang.Math.*;
 
 public class Solution {
-    /*
-    Do not modify this main function.
-    */
-    public static void main(final String[] args) {
+	/*
+	Do not modify this main function.
+	*/
+	public static void main(final String[] args) {
 		Scanner scan = new Scanner(System.in);
 		int a = scan.nextInt();
 		int b = scan.nextInt();
