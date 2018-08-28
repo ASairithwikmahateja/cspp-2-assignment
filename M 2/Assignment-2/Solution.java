@@ -30,7 +30,7 @@ public class Solution {
     @param c int
     */
     static void rootsOfQuadraticEquation(final int a, final int b, final int c) {
-    	final int t = 4;
+        final int t = 4;
     double proot = (-1 * b + Math.sqrt(b * b - t * a * c)) / (2 * a);
     double nroot = (-1 * b - Math.sqrt(b * b - t * a * c)) / (2 * a);
     System.out.println(proot + " " + nroot);
