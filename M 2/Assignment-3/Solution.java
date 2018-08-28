@@ -19,14 +19,12 @@ public class Solution {
 		if (exponent == 0) {
 			int pow = 1;
 			return pow;
-			 }
-		else if (exponent == 1) {
-			int pow = base;
-			return pow;
-			 }
-		else {
-			long pow = base * power(base, exponent - 1);
-			return pow;
+			 } else if (exponent == 1) {
+				int pow = base;
+				return pow;
+			 } else {
+				long pow = base * power(base, exponent - 1);
+				return pow;
 			 }
 	}
 }
