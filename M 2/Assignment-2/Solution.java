@@ -18,9 +18,9 @@ public class Solution {
 	function and print the output.
 	*/
 	static void rootsOfQuadraticEquation(final int a, final int b, final int c) {
-		double proot = (-1 * b + Math.sqrt(b * b - 4 * a * c)) / (2 * a);
-		double nroot = (-1 * b - Math.sqrt(b * b - 4 * a * c)) / (2 * a);
-		System.out.println(proot + " " + nroot);
+	double proot = (-1 * b + Math.sqrt(b * b - 4 * a * c)) / (2 * a);
+	double nroot = (-1 * b - Math.sqrt(b * b - 4 * a * c)) / (2 * a);
+	System.out.println(proot + " " + nroot);
 	}
 }
 
