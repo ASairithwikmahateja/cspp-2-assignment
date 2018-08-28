@@ -14,7 +14,8 @@ public class Solution {
 		//System.out.println(rootsOfQuadraticEquation(a, b, c));
 	}
 	/*
-	Need to write the rootsOfQuadraticEquation function and print the output.
+	Need to write the rootsOfQuadraticEquation 
+	function and print the output.
 	*/
 	static void rootsOfQuadraticEquation(int a, int b, int c) {
 		double proot = (-1 * b + Math.sqrt(b * b - 4 * a * c)) / (2 * a);
