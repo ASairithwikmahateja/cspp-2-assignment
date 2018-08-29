@@ -20,8 +20,8 @@ public final class Solution {
         Scanner s = new Scanner(System.in);      
         int n = s.nextInt();
         int i, j, cnt = 0, num = 0;
-        for (i = n; i >= 7; i--) {
-        	for (j = i % 10; j >= 7; j--) {
+        for (i = n; i >= 0; i--) {
+        	for (j = i % 10; j >= 0; j--) {
         	    if (i % 10 == 7) 
         		    cnt = cnt + 1;
         	}
