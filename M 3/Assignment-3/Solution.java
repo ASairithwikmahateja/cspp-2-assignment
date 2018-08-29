@@ -7,6 +7,10 @@ Do not modify this main function.
 */
 public class Solution {
     /**
+    @default constructor
+    */
+    private Solution() { }
+    /**
      *
      * @param      args    String
      */
