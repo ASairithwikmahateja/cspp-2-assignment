@@ -19,17 +19,13 @@ public final class Solution {
     public static void main(final String[] args) {
         Scanner s = new Scanner(System.in);      
         int n = s.nextInt();
-        int i, cnt = 0, num = 0;
-        while (n > 0) {
-        	num = num + 1;
-        	n = n / 10;
-        } System.out.println(num);
-        for (i = n; i >= 0; i--) {
-        	if (i % 10 == 7) {
-        		//System.out.println(i);
-        		cnt = cnt + 1;
-        	} num = num -1;
-       	} System.out.println(cnt);
+        int i, j, cnt = 0, num = 0;
+        for (i = n; i >= 7; i--) {
+        	for (j = i % 10; j >= 7; j--) {
+        	    if (i % 10 == 7) 
+        		    cnt = cnt + 1;
+        	}
+        } System.out.println(cnt);
    	}
 } 
 
