@@ -24,9 +24,9 @@ public final class Solution {
         for (i = n; i >= 0; i--) {
             j = i % rem;
             if (j == seven) {
-   	            j = i % rem;
-   	    	    cnt = cnt + 1;
-                i = i / rem;
+            	j = i % rem;
+            	cnt = cnt + 1;
+            	i = i / rem;
        	    }
        	} System.out.println(cnt);
    	}
