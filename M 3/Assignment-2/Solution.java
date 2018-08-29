@@ -19,13 +19,15 @@ public final class Solution {
     public static void main(final String[] args) {
         Scanner s = new Scanner(System.in);      
         int n = s.nextInt();
+        final int seven = 7;
+        final int rem = 10;
         int i = n, cnt = 0, j = 0;
         for (i = n; i >= 0; i--) {
-        	j = i % 10;
-        	if (j == 7) {
-   	    	    j = i % 10;
+        	j = i % rem;
+        	if (j == seven) {
+   	    	    j = i % rem;
    	    	    cnt = cnt + 1;
-       	        i = i / 10;
+       	        i = i / rem;
        	    }
        	} System.out.println(cnt);
    	}
