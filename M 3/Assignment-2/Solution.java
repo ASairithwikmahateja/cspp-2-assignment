@@ -23,6 +23,7 @@ public final class Solution {
         while (n > 0) {
         	num = num + 1;
         	n = n / 10;
+        	System.out.println(num);
         }
         for (i = n; i >= 7; i--) {
         	if (i % Math.pow(10, num) == 7) {
