@@ -20,11 +20,11 @@ public final class Solution {
         int n = s.nextInt();
         int i, cnt = 0;
         for (i = n; i >= 7; i--) {
-        	while (i % 10 == 7){
-        		i = i / 10;
-            	cnt = cnt + 1;
-            	i++;
-            }
-        } System.out.println(cnt);
-    }
+        	if (i % 10 == 7) {
+        		//System.out.println(i);
+        		cnt = cnt + 1;
+        	}
+       	} System.out.println(cnt);
+    } 
 }
+
