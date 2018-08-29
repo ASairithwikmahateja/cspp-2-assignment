@@ -1,9 +1,9 @@
 import java.util.Scanner;
 import java.lang.Math;
     /*
-	Do not modify this main function.
-	*/
-	/**
+    Do not modify this main function.
+    */
+    /**
     @author Mahateja
     */
 public final class Solution {
@@ -17,7 +17,7 @@ public final class Solution {
      * @param      args    String
      */
     public static void main(final String[] args) {
-        Scanner s = new Scanner(System.in);      
+        Scanner s = new Scanner(System.in);
         int n = s.nextInt();
         final int seven = 7;
         final int rem = 10;
@@ -31,6 +31,4 @@ public final class Solution {
        	    }
        	} System.out.println(cnt);
    	}
-} 
-
-
+}
