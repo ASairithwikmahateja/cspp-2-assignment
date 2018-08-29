@@ -23,12 +23,13 @@ public final class Solution {
         while (n > 0) {
         	num = num + 1;
         	n = n / 10;
-        	System.out.println(num);
-        }
+        } System.out.println(num);
         for (i = n; i >= 7; i--) {
-        	if (i % Math.pow(10, num) == 7) {
-        		//System.out.println(i);
-        		cnt = cnt + 1;
+        	while (num > 0) {
+        		if (i % 10 == 7) {
+        			//System.out.println(i);
+        			cnt = cnt + 1;
+        		} num = num -1;
         	}
        	} System.out.println(cnt);
     } 
