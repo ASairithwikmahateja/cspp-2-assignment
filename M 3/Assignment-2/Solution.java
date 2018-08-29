@@ -24,7 +24,7 @@ public final class Solution {
         	num = num + 1;
         	n = n / 10;
         } System.out.println(num);
-        for (i = n; i >= 7; i--) {
+        for (i = n; i >= 0; i--) {
         	while (num > 0) {
         		if (i % 10 == 7) {
         			//System.out.println(i);
