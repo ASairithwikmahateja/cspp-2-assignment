@@ -25,15 +25,15 @@ public class Solution {
      *
      * @return     gcd   int 
      */
-    static int gcd(final int n1, final int n2) {
+    static int gcd(int n1, int n2) {
         int gcd = 0;
         int i = 2;
-        if (n1 > n2) {
-            for (i = 2; i <= n1; i++) {
-                if (n1 % i == 0 & n2 % i == 0) {
-                    gcd = i;          
-                }                    
-            } return gcd;
-        } return 1;
+        for (i = 2; i <= n1; i++) {
+            if (n1 % i == 0 & n2 % i == 0) {
+                gcd = i;          
+        return gcd;
+            }                    
+        }
+    return 1; 
     }
 }
