@@ -27,7 +27,7 @@ public final class Solution {
                 j = i % rem;
                 cnt = cnt + 1;
                 i = i / rem;
-       	    }
-       	} System.out.println(cnt);
-   	}
+            }
+        } System.out.println(cnt);
+    }
 }
