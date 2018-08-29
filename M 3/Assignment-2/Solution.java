@@ -25,10 +25,10 @@ public final class Solution {
         for (i = 2; i <= n; i++) {
         	temp = i;
         	while (temp > 0) {
-        		r = temp % 10;
-        		if(r == 7) 
+        		r = temp % rem;
+        		if(r == seven) 
         		cnt = cnt + 1;
-        		temp = temp / 10;	
+        		temp = temp / rem;	
         	}
         } System.out.println(cnt);
     }
