@@ -21,10 +21,10 @@ public final class Solution {
         final int seven = 7;
         final int rem = 10;
         int i = n, cnt = 0, j = i, k = 0;
-        for (i = n; i >= 7; i--) {
-            	k = i % rem;
+        for (i = n; i >= seven; i--) {
+            	k = j % rem;
             	j = i / rem;
-            	if (j >= 0) {
+            	if (j > 0) {
             		if (k == seven) {
             			cnt = cnt + 1;
             		}
