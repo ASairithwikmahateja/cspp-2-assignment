@@ -25,13 +25,12 @@ public final class Solution {
         	n = n / 10;
         } System.out.println(num);
         for (i = n; i >= 0; i--) {
-        	while (num > 0) {
-        		if (i % 10 == 7) {
-        			//System.out.println(i);
-        			cnt = cnt + 1;
-        		} num = num -1;
-        	}
+        	if (i % 10 == 7) {
+        		//System.out.println(i);
+        		cnt = cnt + 1;
+        	} num = num -1;
        	} System.out.println(cnt);
-    } 
-}
+   	}
+} 
+
 
