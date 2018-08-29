@@ -20,16 +20,17 @@ public final class Solution {
         int n = s.nextInt();
         final int seven = 7;
         final int rem = 10;
- 		int i, r = 0, temp;
+        int i, r = 0, temp;
         int cnt = 0;
         for (i = 2; i <= n; i++) {
-        	temp = i;
-        	while (temp > 0) {
-        		r = temp % rem;
-        		if(r == seven) 
-        		cnt = cnt + 1;
-        		temp = temp / rem;	
-        	}
+            temp = i;
+            while (temp > 0) {
+        	    r = temp % rem;
+        	    if (r == seven) { 
+                    cnt = cnt + 1;
+                }
+                temp = temp / rem;
+            }
         } System.out.println(cnt);
     }
 }
