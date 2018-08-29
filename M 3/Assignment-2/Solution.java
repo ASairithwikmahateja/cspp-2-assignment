@@ -26,7 +26,7 @@ public final class Solution {
             temp = i;
             while (temp > 0) {
         	    r = temp % rem;
-        	    if (r == seven) { 
+        	    if (r == seven) {
                     cnt = cnt + 1;
                 }
                 temp = temp / rem;
