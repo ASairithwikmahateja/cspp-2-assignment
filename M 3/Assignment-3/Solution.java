@@ -5,7 +5,7 @@ Do not modify this main function.
 /**
 @author Mahateja
 */
-public class Solution {
+public final class Solution {
     /**
     @default constructor
     */
