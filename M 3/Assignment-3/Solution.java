@@ -33,7 +33,7 @@ public final class Solution {
         int gcd = 0;
         int i = 2;
         int tmp = 0;
-        int a = n1,b = n2;
+        int a = n1, b = n2;
         if (n1 > n2) {
             for (i = 2; i <= n1; i++) {
                 if (n1 % i == 0 & n2 % i == 0) {
@@ -50,3 +50,5 @@ public final class Solution {
         }
     }
 }
+
+
