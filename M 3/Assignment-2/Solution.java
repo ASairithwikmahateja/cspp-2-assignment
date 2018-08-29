@@ -20,11 +20,13 @@ public final class Solution {
         Scanner s = new Scanner(System.in);      
         int n = s.nextInt();
         int i = n, cnt = 0, j = 0;
-        for (;i >= 0; i--) {
+        for (i = n; i >= 0; i--) {
         	j = i % 10;
-        	for (;j == 7; j--) {
+        	if (j == 7) {
+   	    	    j = i % 10;
    	    	    cnt = cnt + 1;
-       	    } i = i /10;
+       	        i = i / 10;
+       	    }
        	} System.out.println(cnt);
    	}
 } 
