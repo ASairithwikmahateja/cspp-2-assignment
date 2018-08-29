@@ -20,14 +20,17 @@ public final class Solution {
         int n = s.nextInt();
         final int seven = 7;
         final int rem = 10;
-        int i = n, cnt = 0, j = 0;
-        for (i = n; i >= 0; i--) {
-            j = i % rem;
-            if (j == seven) {
-                j = i % rem;
-                cnt = cnt + 1;
-                i = i / rem;
-            }
+        int i = n, cnt = 0, j = i, k = 0;
+        for (i = n; i >= 7; i--) {
+            	k = i % rem;
+            	j = i / rem;
+            	if (j > 0) {
+            		if (k == seven) {
+            			cnt = cnt + 1;
+            		}
+
+            	}
+
         } System.out.println(cnt);
     }
 }
