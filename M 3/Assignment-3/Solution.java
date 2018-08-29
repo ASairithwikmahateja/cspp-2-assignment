@@ -17,8 +17,8 @@ public class Solution {
         gcd(n1, n2);
     }
     /*
-	Need to write the gcd function and print the output.
-	*/
+    *Need to write the gcd function and print the output.
+    */
     /**
      *
      *
