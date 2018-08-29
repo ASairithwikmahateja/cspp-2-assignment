@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.lang.Math;
     /*
 	Do not modify this main function.
 	*/
@@ -18,9 +19,13 @@ public final class Solution {
     public static void main(final String[] args) {
         Scanner s = new Scanner(System.in);      
         int n = s.nextInt();
-        int i, cnt = 0;
+        int i, cnt = 0, num = 0;
+        while (n > 0) {
+        	num = num + 1;
+        	n = n / 10;
+        }
         for (i = n; i >= 7; i--) {
-        	if (i % 10 == 7) {
+        	if (i % Math.pow(10, num) == 7) {
         		//System.out.println(i);
         		cnt = cnt + 1;
         	}
