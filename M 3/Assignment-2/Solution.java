@@ -22,7 +22,7 @@ public final class Solution {
         final int rem = 10;
         int cnt = 0;
         for (int i = n; i >= seven; i--) {
-        	for (int j = i % rem; j == seven; j = j / 10) {
+        	for (int j = i % rem; j == seven; j = j / rem) {
         			cnt = cnt + 1;
         	}
         } System.out.println(cnt);
