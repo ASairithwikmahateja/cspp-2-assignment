@@ -21,8 +21,8 @@ public final class Solution {
         final int seven = 7;
         final int rem = 10;
         int cnt = 0;
-        for (int i = n; i >= 7; i--) {
-        	for (int j = i % 10; j == 7; j = j / 10) {
+        for (int i = n; i >= seven; i--) {
+        	for (int j = i % rem; j == seven; j = j / 10) {
         			cnt = cnt + 1;
         	}
         } System.out.println(cnt);
