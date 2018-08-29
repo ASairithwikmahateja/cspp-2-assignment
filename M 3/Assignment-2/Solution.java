@@ -24,7 +24,7 @@ public final class Solution {
         for (i = n; i >= 7; i--) {
             	k = i % rem;
             	j = i / rem;
-            	if (j > 0) {
+            	if (j >= 0) {
             		if (k == seven) {
             			cnt = cnt + 1;
             		}
