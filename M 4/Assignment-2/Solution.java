@@ -25,13 +25,13 @@ public final class Solution {
         for (int i = 0; i < row; i++) {
             for (int j = 0; j < col; j++) {
                 a[i][j] = sc.nextInt();
-        	    System.out.println(a[i][j]);
+        	    //System.out.println(a[i][j]);
         	} 
         }
         for (int i = 0; i < row; i++) {
             for (int j = 0; j < col; j++) {
                 b[i][j] = sc.nextInt();
-        	    System.out.println(b[i][j]);
+        	    //System.out.println(b[i][j]);
         	} 
         }
         for (int i = 0; i < row; i++) {
