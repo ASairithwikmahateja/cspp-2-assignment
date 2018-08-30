@@ -5,11 +5,19 @@ import java.util.Scanner;
     /**
     @author Mahateja
     */
-public class Solution
-{   /*
-	Fill this main function to print maximum of given array
-	*/
-	public static void main(String[] args)
+public final class Solution {   
+    /*
+    Fill this main function to print maximum of given array
+    */
+    /**
+    @default constructor
+    */
+    private Solution() { }
+    /**
+     *
+     * @param      args    String
+     */
+	public static void main(final String[] args)
 	{
 		Scanner sc = new Scanner(System.in);
 		int n = sc.nextInt();
