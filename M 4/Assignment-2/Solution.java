@@ -37,12 +37,10 @@ public final class Solution {
         }
         if (row == row1 & col == col1) {
             int[][] c = new int[row][col];
-            String s = "";
             for (int i = 0; i < row; i++) {
                 for (int j = 0; j < col; j++) {
-                	    c[i][j] = a[i][j] + b[i][j];
-                        s = s +  c[i][j] + " ";
-                    System.out.print(s.trim());
+                        c[i][j] = a[i][j] + b[i][j];
+                    System.out.print(c[i][j] + " ");
                 } System.out.println();
             }
         } else {
