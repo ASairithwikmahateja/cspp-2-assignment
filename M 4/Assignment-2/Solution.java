@@ -42,7 +42,7 @@ public final class Solution {
                     if (i != row & j != col) {
                         c[i][j] = a[i][j] + b[i][j];
                     System.out.print(c[i][j] + " ");
-                	}
+                    }
                 } System.out.println();
             }
         } else {
