@@ -29,8 +29,8 @@ public final class Solution {
         int row1 = sc.nextInt();
         int col1 = sc.nextInt();
         int[][] b = new int[row1][col1];
-        for (int i = 0; i < row; i++) {
-            for (int j = 0; j < col; j++) {
+        for (int i = 0; i < row1; i++) {
+            for (int j = 0; j < col1; j++) {
                 b[i][j] = sc.nextInt();
         	    //System.out.println(b[i][j]);
         	} 
