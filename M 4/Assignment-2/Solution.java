@@ -42,8 +42,8 @@ public final class Solution {
                 for (int j = 0; j < col; j++) {
                     c[i][j] = a[i][j] + b[i][j];
                     append = c[i][j] + " ";
-                System.out.print(append.trim());
-                } System.out.println();
+                } System.out.print(append.trim());
+                System.out.println();
             }
         } else {
             System.out.println("not possible");
