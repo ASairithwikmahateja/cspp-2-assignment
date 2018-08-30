@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.lang.Integer;
     /*
     Do not modify this main function.
     */
