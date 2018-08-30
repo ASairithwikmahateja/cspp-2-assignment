@@ -22,13 +22,12 @@ public final class Solution {
 		for (int i = 0; i <= n; i++) {
 			String s = sc.nextLine();
 			double res = binaryToDecimal(s);//Write binaryToDecimal function
-			System.out.println(res);
+			System.out.println((int)res);
 		}
 	}
 	static double binaryToDecimal(final String s) {
 		double bin = 0;
 		for (int i = 0; i < s.length(); i++) {
-
 			bin = Math.pow(2, i);
 		} return bin;
 	}
