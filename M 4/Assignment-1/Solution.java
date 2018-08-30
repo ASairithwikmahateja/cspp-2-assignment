@@ -1,6 +1,12 @@
-import java.util.*;
+import java.util.Scanner;
+    /*
+    Do not modify this main function.
+    */
+    /**
+    @author Mahateja
+    */
 public class Solution
-{/*
+{   /*
 	Fill this main function to print maximum of given array
 	*/
 	public static void main(String[] args)
@@ -12,9 +18,9 @@ public class Solution
 			a[i] = sc.nextInt();
 		}
 		int tmp = 0;
-		for (int i = 0; i < a.length-1; i++) {
-			if (tmp < a[i+1]) {
-				tmp = a[i+1];
+		for (int i = 0; i < a.length - 1; i++) {
+			if (tmp < a[i + 1]) {
+				tmp = a[i + 1];
 			}
 		} System.out.println(tmp);
 	}
