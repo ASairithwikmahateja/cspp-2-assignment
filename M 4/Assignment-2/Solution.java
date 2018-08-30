@@ -25,7 +25,7 @@ public final class Solution {
             for (int j = 0; j < col; j++) {
                 a[i][j] = sc.nextInt();
         	    //System.out.println(a[i][j]);
-        	} 
+        	}
         }
         int row1 = sc.nextInt();
         int col1 = sc.nextInt();
@@ -34,7 +34,7 @@ public final class Solution {
             for (int j = 0; j < col1; j++) {
                 b[i][j] = sc.nextInt();
         	    //System.out.println(b[i][j]);
-        	} 
+        	}
         }
         if (row == row1 & col == col1) {
         	int[][] c = new int[row][col];
