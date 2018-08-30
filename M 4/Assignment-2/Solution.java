@@ -46,5 +46,5 @@ public final class Solution {
         } else {
             System.out.println("not possible");
         }
-	}
+    }
 }
