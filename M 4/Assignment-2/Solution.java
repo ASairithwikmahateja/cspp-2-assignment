@@ -41,7 +41,7 @@ public final class Solution {
                 for (int j = 0; j < col; j++) {
                         c[i][j] = a[i][j] + b[i][j];
                     System.out.print(c[i][j]);
-                    if (j != col-1) {
+                    if (j != col - 1) {
                         System.out.print(" ");
                     }
                 } System.out.println();
