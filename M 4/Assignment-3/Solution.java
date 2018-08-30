@@ -28,7 +28,9 @@ public final class Solution {
 	static double binaryToDecimal(final String s) {
 		double bin = 0;
 		for (int i = 0; i < s.length(); i++) {
-			bin = Math.pow(2, i);
+			if (s == "1") {
+				bin = bin + Math.pow(2, i);
+			}
 		} return bin;
 	}
 
