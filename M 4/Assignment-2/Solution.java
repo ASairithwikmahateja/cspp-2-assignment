@@ -15,8 +15,8 @@ public final class Solution {
      *
      * @param      args    String
      */
-	public static void main(final String[] args) {
-		Scanner sc = new Scanner(System.in);
+    public static void main(final String[] args) {
+        Scanner sc = new Scanner(System.in);
         int row = sc.nextInt();
         int col = sc.nextInt();
         int[][] a = new int[row][col];
@@ -24,7 +24,7 @@ public final class Solution {
             for (int j = 0; j < col; j++) {
                 a[i][j] = sc.nextInt();
         	    //System.out.println(a[i][j]);
-        	}
+            }
         }
         int row1 = sc.nextInt();
         int col1 = sc.nextInt();
@@ -33,10 +33,10 @@ public final class Solution {
             for (int j = 0; j < col1; j++) {
                 b[i][j] = sc.nextInt();
         	    //System.out.println(b[i][j]);
-        	}
+            }
         }
         if (row == row1 & col == col1) {
-        	int[][] c = new int[row][col];
+            int[][] c = new int[row][col];
             for (int i = 0; i < row; i++) {
                 for (int j = 0; j < col; j++) {
                     c[i][j] = a[i][j] + b[i][j];
