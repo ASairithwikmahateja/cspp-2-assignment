@@ -1,0 +1,57 @@
+########## Testcase 0: Failed ##########
+Expected Output: 
+2 2 3
+4 6 6
+7 8 10
+
+Your Output: 
+2 2 3 
+4 6 6 
+7 8 10
+
+----------------------------------------
+########## Testcase 1: Failed ##########
+Expected Output: 
+2 2 1
+4 6 1
+7 8 2
+
+Your Output: 
+2 2 1 
+4 6 1 
+7 8 2
+
+----------------------------------------
+########## Testcase 2: Passed ##########
+Expected Output: 
+not possible
+
+Your Output: 
+not possible
+
+----------------------------------------
+########## Testcase 3: Passed ##########
+Expected Output: 
+not possible
+
+Your Output: 
+not possible
+
+----------------------------------------
+Result: 2/4 testcases passed.
+Starting audit...
+Audit done.
+
+
+On branch master
+Your branch is ahead of 'origin/master' by 3 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+	modified:   ../../M 2/Assignment-2/Solution.java
+	modified:   ../../M 2/area_of_circle/AreaOfCircle.class
+	modified:   ../../M 2/area_of_circle/AreaOfCircle.java
+	modified:   ../../M 3/Assignment-3/Solution.java
+
+no changes added to commit
+
