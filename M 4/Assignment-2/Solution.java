@@ -42,7 +42,7 @@ public final class Solution {
                 for (int j = 0; j < col; j++) {
                     c[i][j] = a[i][j] + b[i][j];
                     String str = c[i][j] + " ";
-        	        System.out.print(str.trim());
+        	    System.out.print(str.trim());
         	    } System.out.println();
             }
         } else {
