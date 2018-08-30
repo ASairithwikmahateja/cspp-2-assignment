@@ -6,7 +6,7 @@ import java.util.Scanner;
     @author Mahateja
     */
 public final class Solution {
-	/* Fill the main function to print resultant of addition of matrices*/
+    /* Fill the main function to print resultant of addition of matrices*/
     /**
     @default constructor
     */
