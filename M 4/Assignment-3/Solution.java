@@ -33,8 +33,8 @@ public final class Solution {
 	 */
 	static double binaryToDecimal(final String s) {
 		double bin = 0;
-		int v = Integer.parseInt(s);
-		int tmp = 0;
+		Long v = Long.parseLong(s);
+		Long tmp;
 		for (int i = 0; i < s.length(); i++) {
 			tmp = v % 10;
 	        bin = bin + tmp * Math.pow(2, i);
