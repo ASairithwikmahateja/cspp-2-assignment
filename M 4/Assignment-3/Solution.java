@@ -16,32 +16,31 @@ public final class Solution {
      *
      * @param      args    String
      */
-	public static void main(final String[] args) {
-		Scanner sc = new Scanner(System.in);
-		int n = Integer.parseInt(sc.nextLine());
-		for (int i = 0; i < n; i++) {
-			String s = sc.nextLine();
-			double res = binaryToDecimal(s);
+    public static void main(final String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = Integer.parseInt(sc.nextLine());
+        for (int i = 0; i < n; i++) {
+            String s = sc.nextLine();
+            double res = binaryToDecimal(s);
 		    //Write binaryToDecimal function
-			System.out.println((int) res);
-		}
-	}
-	/**
-	 *
-	 * @param      s     String
-	 *
-	 * @return     rev
-	 */
-	static double binaryToDecimal(final String s) {
-		double bin = 0;
-		Long v = Long.parseLong(s);
-		Long tmp;
-		final int dec = 10;
-		for (int i = 0; i < s.length(); i++) {
-			tmp = v % dec;
+            System.out.println((int) res);
+        }
+    }
+    /**
+     *
+     * @param      s     String
+     *
+     * @return     rev
+     */
+    static double binaryToDecimal(final String s) {
+        double bin = 0;
+        Long v = Long.parseLong(s); 
+        Long tmp;
+        final int dec = 10;
+        for (int i = 0; i < s.length(); i++) {
+            tmp = v % dec;
 	        bin = bin + tmp * Math.pow(2, i);
 	        v = v / dec;
-   	    }
-	    return bin;
-	}
+   	    } return bin;
+    }
 }
