@@ -20,7 +20,8 @@ public final class Solution {
         int secncoeff = scan.nextInt();
         int thrdcoeff = scan.nextInt();
         rootsOfQuadratic(frstcoeff, secncoeff, thrdcoeff);
-        //System.out.println(rootsOfQuadraticEquation(frstcoeff, secncoeff, thrdcoeff));
+        /*System.out.println(rootsOfQuadraticEquation
+        (frstcoeff, secncoeff, thrdcoeff));*/
     }
     /**
     Need to write the rootsOfQuadraticEquation
@@ -33,9 +34,9 @@ public final class Solution {
      final int thrdcoeff) {
         final int val = 4;
     double proot = (-1 * secncoeff + Math.sqrt
-        (secncoeff * secncoeff - val * frstcoeff * thrdcoeff)) / (2 * frstcoeff);
+    (secncoeff * secncoeff - val * frstcoeff * thrdcoeff)) / (2 * frstcoeff);
     double nroot = (-1 * secncoeff - Math.sqrt
-        (secncoeff * secncoeff - val * frstcoeff * thrdcoeff)) / (2 * frstcoeff);
+    (secncoeff * secncoeff - val * frstcoeff * thrdcoeff)) / (2 * frstcoeff);
     System.out.println(proot + " " + nroot);
     }
 }
