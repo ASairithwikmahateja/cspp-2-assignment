@@ -31,8 +31,10 @@ public final class Solution {
     */
     static void rootsOfQuadratic(final int frstcoeff, final int secncoeff, final int thrdcoeff) {
         final int val = 4;
-    double proot = (-1 * secncoeff + Math.sqrt(secncoeff * secncoeff - val * frstcoeff * thrdcoeff)) / (2 * frstcoeff);
-    double nroot = (-1 * secncoeff - Math.sqrt(secncoeff * secncoeff - val * frstcoeff * thrdcoeff)) / (2 * frstcoeff);
+    double proot = (-1 * secncoeff + 
+        Math.sqrt(secncoeff * secncoeff - val * frstcoeff * thrdcoeff)) / (2 * frstcoeff);
+    double nroot = (-1 * secncoeff - 
+        Math.sqrt(secncoeff * secncoeff - val * frstcoeff * thrdcoeff)) / (2 * frstcoeff);
     System.out.println(proot + " " + nroot);
     }
 }
