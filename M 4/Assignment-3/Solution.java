@@ -28,10 +28,10 @@ public final class Solution {
 	}
 	static double binaryToDecimal(final String s) {
 		double bin = 0;
+		int tmp = 0;
 		for (int i = 0; i < s.length(); i++) {
-			if (s.charAt(i) == '1') {
-                bin = bin + Math.pow(2, i+1);
-			}
+			tmp = (int) s.charAt(i);
+            bin = bin + tmp * Math.pow(2, i);
 		} return bin;
 	}
 }
