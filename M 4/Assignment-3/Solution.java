@@ -39,7 +39,7 @@ public final class Solution {
         final int dec = 10;
         for (int i = 0; i < s.length(); i++) {
             tmp = v % dec;
-	        bin = bin + tmp * Math.pow(2, i);
+            bin = bin + tmp * Math.pow(2, i);
 	        v = v / dec;
    	    } return bin;
     }
