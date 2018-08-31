@@ -35,11 +35,11 @@ public final class Solution {
     static double binaryToDecimal(final String s) {
         double bin = 0;
         Long v = Long.parseLong(s);
-        Long tmp;
+        Long rem;
         final int dec = 10;
         for (int i = 0; i < s.length(); i++) {
-            tmp = v % dec;
-            bin = bin + tmp * Math.pow(2, i);
+            rem = v % dec;
+            bin = bin + rem * Math.pow(2, i);
             v = v / dec;
         } return bin;
     }
