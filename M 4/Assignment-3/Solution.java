@@ -41,6 +41,6 @@ public final class Solution {
             tmp = v % dec;
             bin = bin + tmp * Math.pow(2, i);
             v = v / dec;
-   	    } return bin;
+        } return bin;
     }
 }
