@@ -22,7 +22,7 @@ public final class Solution {
         for (int i = 0; i < n; i++) {
             String s = sc.nextLine();
             double res = binaryToDecimal(s);
-		    //Write binaryToDecimal function
+            //Write binaryToDecimal function
             System.out.println((int) res);
         }
     }
@@ -34,7 +34,7 @@ public final class Solution {
      */
     static double binaryToDecimal(final String s) {
         double bin = 0;
-        Long v = Long.parseLong(s); 
+        Long v = Long.parseLong(s);
         Long tmp;
         final int dec = 10;
         for (int i = 0; i < s.length(); i++) {
