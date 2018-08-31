@@ -1,6 +1,6 @@
-// Given an String, Write a java method that returns the decimal value for the given binary string.
+/* Given an String, Write a java method that returns the 
+decimal value for the given binary string.*/
 import java.util.Scanner;
-import java.lang.*;
     /**
     @author Mahateja
     */
@@ -21,7 +21,8 @@ public final class Solution {
 		int n = Integer.parseInt(sc.nextLine());
 		for (int i = 0; i < n; i++) {
 			String s = sc.nextLine();
-			double res = binaryToDecimal(s);//Write binaryToDecimal function
+			double res = binaryToDecimal(s);
+		    //Write binaryToDecimal function
 			System.out.println((int) res);
 		}
 	}
@@ -35,11 +36,12 @@ public final class Solution {
 		double bin = 0;
 		Long v = Long.parseLong(s);
 		Long tmp;
+		final int dec = 10;
 		for (int i = 0; i < s.length(); i++) {
-			tmp = v % 10;
+			tmp = v % dec;
 	        bin = bin + tmp * Math.pow(2, i);
-	        v = v / 10;
-   	    }  
+	        v = v / dec;
+   	    }
 	    return bin;
 	}
 }
