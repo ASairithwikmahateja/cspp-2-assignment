@@ -16,23 +16,23 @@ public final class Solution {
     */
     public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
-        int a = scan.nextInt();
-        int b = scan.nextInt();
-        int c = scan.nextInt();
-        rootsOfQuadratic(a, b, c);
-        //System.out.println(rootsOfQuadraticEquation(a, b, c));
+        int frstcoeff = scan.nextInt();
+        int secncoeff = scan.nextInt();
+        int thrdcoeff = scan.nextInt();
+        rootsOfQuadratic(frstcoeff, secncoeff, thrdcoeff);
+        //System.out.println(rootsOfQuadraticEquation(frstcoeff, secncoeff, thrdcoeff));
     }
     /**
     Need to write the rootsOfQuadraticEquation
     function and print the output.
-    @param a int
-    @param b int
-    @param c int
+    @param frstcoeff int
+    @param secncoeff int
+    @param thrdcoeff int
     */
-    static void rootsOfQuadratic(final int a, final int b, final int c) {
-        final int t = 4;
-    double proot = (-1 * b + Math.sqrt(b * b - t * a * c)) / (2 * a);
-    double nroot = (-1 * b - Math.sqrt(b * b - t * a * c)) / (2 * a);
+    static void rootsOfQuadratic(final int frstcoeff, final int secncoeff, final int thrdcoeff) {
+        final int val = 4;
+    double proot = (-1 * secncoeff + Math.sqrt(secncoeff * secncoeff - val * frstcoeff * thrdcoeff)) / (2 * frstcoeff);
+    double nroot = (-1 * secncoeff - Math.sqrt(secncoeff * secncoeff - val * frstcoeff * thrdcoeff)) / (2 * frstcoeff);
     System.out.println(proot + " " + nroot);
     }
 }
