@@ -1,4 +1,4 @@
-/* Given an String, Write a java method that returns 
+/* Given an String, Write a java method that returns
 the decimal value for the given binary string.*/
 import java.util.Scanner;
     /**
@@ -32,7 +32,7 @@ public final class Solution {
     static String reverseString(final String s) {
         String revstr = "";
         for (int i = 0; i < s.length(); i++) {
-        	revstr = s.charAt(i) + revstr;
+            revstr = s.charAt(i) + revstr;
         } return revstr;
-	}
+    }
 }
