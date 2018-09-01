@@ -22,19 +22,19 @@ public final class Solution {
         int[] oddcnt = new int[n];
         for (int i = 2; i < n; i++) {
             if (i % 2 != 0) {
-            	oddcnt[i] = 1;
+                oddcnt[i] = 1;
             }
             if (oddcnt[i] == 1) {
-            	int primecnt = 0;
-            	for (int j = 1; j < i; j++)
-            	if (i % j == 0) {
-            		primecnt = primecnt + 1;
-            	}
-            	if (primecnt != 1) {
-            		System.out.println(i);
-            	}
+                int primecnt = 0;
+                for (int j = 1; j < i; j++)
+                if (i % j == 0) {
+                    primecnt = primecnt + 1;
+                }
+                if (primecnt != 1) {
+                    System.out.println(i);
+                }
             }
-    	}
+        }
     }
     /**
     * main method as driver program.
