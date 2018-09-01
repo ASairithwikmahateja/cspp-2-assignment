@@ -31,7 +31,7 @@ final class Solution {
         for (char element : charArray) {
             i += 1;
             if (element - oldCh == 0) {
-                continue;
+                break;
             }  
         }
         charArray[i - 1] = newCh;
