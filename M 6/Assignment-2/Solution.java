@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.lang.Math;
 /**
  * Write a java program to round the
  * elements of a matrix to the nearest 100.
@@ -23,15 +22,16 @@ final class Solution {
      *
      * @return     Matrix of the rounded elements
      */
-    static int[][] roundHundred(final int[][] a, final int rows, final int columns) {
-	// write your code here
-        int m = rows; 
+    static int[][] roundHundred(final int[][] a, 
+        final int rows, final int columns) {
+    // write your code here
+        int m = rows;
         int n = columns;
         int[][] b = new int[m][n];
         final int zer = 0, fift = 50, hunft = 150,
         tohunf = 250, trhunf = 350, fohunf = 450, fihunf = 550;
         final int hundred = 100, tohundred = 200,
-        trhundred = 300, fohundred = 400, fihundred = 500;  
+        trhundred = 300, fohundred = 400, fihundred = 500;
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
                 if (a[i][j] >= zer & a[i][j] < fift) {
@@ -49,7 +49,6 @@ final class Solution {
                 }
             }
         } return b;
-	
     }
     /**
      * Main function.
