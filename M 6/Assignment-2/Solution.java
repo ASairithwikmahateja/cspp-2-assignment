@@ -31,7 +31,19 @@ final class Solution {
         int[][] b = new int[m][n]; 
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
-                b[i][j] = a[i][j];
+                if (a[i][j] >= 0 & a[i][j] < 50) {
+                    b[i][j] = 0;
+                } else if (a[i][j] >= 50 & a[i][j] < 150) {
+                    b[i][j] = 100;
+                } else if (a[i][j] >= 150 & a[i][j] < 250) {
+                    b[i][j] = 200;
+                } else if (a[i][j] >= 250 & a[i][j] < 350) {
+                    b[i][j] = 300;
+                } else if (a[i][j] >= 350 & a[i][j] < 450) {
+                    b[i][j] = 400;
+                } else if (a[i][j] >= 450 & a[i][j] < 550) {
+                    b[i][j] = 500;
+                }
             }
         } return b;
 	
