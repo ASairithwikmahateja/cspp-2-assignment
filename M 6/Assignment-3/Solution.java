@@ -34,7 +34,7 @@ final class Solution {
                 break;
             }  
         }
-        charArray[i] = newCh;
+        charArray[i-1] = newCh;
         return charArray;
     }
     /**
