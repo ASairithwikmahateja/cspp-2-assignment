@@ -28,20 +28,22 @@ final class Solution {
 	// write your code here
         int m = rows; 
         int n = columns;
-        int[][] b = new int[m][n]; 
+        int[][] b = new int[m][n];
+        final int zer = 0, fift = 50, hunft = 150,
+        tohunf = 250, trhunf = 350, fohunf = 450, fihunf = 550;   
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
-                if (a[i][j] >= 0 & a[i][j] < 50) {
+                if (a[i][j] >= zer & a[i][j] < fift) {
                     b[i][j] = 0;
-                } else if (a[i][j] >= 50 & a[i][j] < 150) {
+                } else if (a[i][j] >= fift & a[i][j] < hunft) {
                     b[i][j] = 100;
-                } else if (a[i][j] >= 150 & a[i][j] < 250) {
+                } else if (a[i][j] >= hunft & a[i][j] < tohunf) {
                     b[i][j] = 200;
-                } else if (a[i][j] >= 250 & a[i][j] < 350) {
+                } else if (a[i][j] >= tohunf & a[i][j] < trhunf) {
                     b[i][j] = 300;
-                } else if (a[i][j] >= 350 & a[i][j] < 450) {
+                } else if (a[i][j] >= trhunf & a[i][j] < fohunf) {
                     b[i][j] = 400;
-                } else if (a[i][j] >= 450 & a[i][j] < 550) {
+                } else if (a[i][j] >= fohunf & a[i][j] < fihunf) {
                     b[i][j] = 500;
                 }
             }
