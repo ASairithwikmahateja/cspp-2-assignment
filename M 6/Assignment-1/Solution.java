@@ -20,7 +20,7 @@ public final class Solution {
     static void oddComposites(final int n) {
 	// write your code here
     	int[] oddcnt = new int[n];
-    	for (int i = 0; i < n; i++) {
+    	for (int i = 2; i < n; i++) {
             if (i % 2 != 0) {
             	oddcnt[i] = 1;
             }
