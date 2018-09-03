@@ -34,7 +34,7 @@ class InputValidator {
     }
 }
 /**
- * Main class
+ * @Main class
  */
 public final class Solution {
     /*
