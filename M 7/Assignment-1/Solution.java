@@ -1,4 +1,7 @@
 import java.util.Scanner;
+    /**
+    @author Mahateja
+    */
 class InputValidator {
 	/*Write the atrributes and methods for InputValidator*/
 	private String str;
@@ -16,11 +19,21 @@ class InputValidator {
     }
 }
 public final class Solution {
-	public Solution() { }
+	/*
+    Do not modify the main function
+    */
+    /**
+    @default constructor
+    */
+	private Solution() { }
+	/**
+     *
+     * @param      args    String
+     */
 	public static void main(final String[] args) {
     	Scanner sc = new Scanner(System.in);
     	String input = sc.nextLine();
-    	InputValidator i = new InputValidator(input);  	
+    	InputValidator i = new InputValidator(input);	
     	System.out.println(i.validateData(input));
     }
 }
