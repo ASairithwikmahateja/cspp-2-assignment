@@ -16,10 +16,11 @@ class InputValidator {
     }
 }
 public final class Solution {
-	public static void main(final String args[]) {
+	public Solution() { }
+	public static void main(final String[] args) {
     	Scanner sc = new Scanner(System.in);
     	String input = sc.nextLine();
-    	InputValidator i = new InputValidator(input);    	
+    	InputValidator i = new InputValidator(input);  	
     	System.out.println(i.validateData(input));
     }
 }
