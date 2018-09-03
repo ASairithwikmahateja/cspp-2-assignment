@@ -4,18 +4,28 @@ import java.util.Scanner;
     */
 class InputValidator {
 	/*Write the atrributes and methods for InputValidator*/
+	/**
+	 * String  str
+	 */
 	private String str;
-	public InputValidator(String input) {
+    /**
+    @default constructor
+    */
+	InputValidator(final String input) {
 	    str = input;
 	}
+	/**
+	 *
+	 * @param      input  String
+	 *
+	 * @return     boolean
+	 */
     public boolean validateData(final String input) {
         int len = input.length();
         final int six = 6; 
         if (len >= six) {
         	return true;
-        } else {
-        	return false;
-        }
+        } return false;
     }
 }
 public final class Solution {
