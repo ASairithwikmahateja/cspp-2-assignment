@@ -85,7 +85,7 @@ public class List {
      * 
      * The method returns void (nothing)
      */
-    public void add(int item) {
+    public void add(final int item) {
         //Inserts the specified element at the end of the list.
         arr = Arrays.copyOf(arr, arr.length + 1);
         arr[arr.length - 1] = item;
@@ -124,7 +124,7 @@ public class List {
      * array = [1,3,0,0,0,0,0,0,0,0]
      * The method returns void (nothing)
      */
-    public void remove(int index) {
+    public void remove(final int index) {
     // write the logic for remove here.
     // Think about what to do to the size variable.
     if (index >= size) {
@@ -149,7 +149,7 @@ public class List {
      * How do we check if the position is greater than the 
      * number of items in the list? Would size variable be useful?
      */
-    public int get(int index) {
+    public int get(final int index) {
         // Replace the code below to write the code for get
         try {
             if (index < arr.length) {
@@ -194,7 +194,7 @@ public class List {
      * So, iterate through the list and return true if
      * the item exists and otherwise false
      */
-    public boolean contains(int item) {
+    public boolean contains(final int item) {
         // Replace the code below
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] == item) {
@@ -204,11 +204,11 @@ public class List {
     }
 
     /*
-     * Returns the index of the first occurrence 
+     * Returns the index of the first occurrence
      * of the specified element in this list,
      * or -1 if this list does not contain the element.
      */
-    public int indexOf(int item) {
+    public int indexOf(final int item) {
         // Replace the code below
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] == item) {
@@ -254,11 +254,12 @@ public class List {
                 case "get":
                 if (l.get(Integer.parseInt(tokens[1])) != -1) {
                     System.out.println(l.get(Integer.parseInt(tokens[1])));
-                } 
+                }
                 break;
                 case "contains":
                 System.out.println(l.contains(Integer.parseInt(tokens[1])));
                 break;
+                default :
             }
         }
 	}
