@@ -27,7 +27,6 @@ public class List {
      *
     */
     private int[] arr = new int[0];
-    
     // declare a private int[]
     // don't create the array yet using new
     // that's the job of the List constructor
@@ -49,10 +48,9 @@ public class List {
      * So, to keep track of the size we need a variable called size
      * Again, we use private as we don't want that size variable
      * to be accessed by the methods that are outside of the List class.
-     * 
+     *
      */
     private int size = 0;
-
     // declare a private int size
     // again, don't initialize it here
     // variable initialization should be done in the constructor
@@ -73,7 +71,6 @@ public class List {
         // An empty list has how many items?
         // That is the initial value to use for size.
     }
-    
     /*
      * The add method does what the name suggests.
      * Add an int item to the list.
