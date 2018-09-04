@@ -155,7 +155,7 @@ public class List {
             if (index < arr.length) {
                 return arr[index];
             } throw new Exception();
-        } catch(Exception e) { }
+        } catch (Exception e) { }
         return -1;
     }
 
@@ -168,7 +168,7 @@ public class List {
      * System.out.println(l);
      * This statement is a shortcut for
      * System.out.println(l.toString());
-     * 
+     *
      * So, implement the toString method to display the items
      * in the list in the square brackets notation.
      * i.e., if the list has numbers 1, 2, 3
@@ -185,9 +185,8 @@ public class List {
         for (int i = 0; i < size; i++) {
             tmp[i] = arr[i];
         }
-        return Arrays.toString(tmp).replace(" ","");
+        return Arrays.toString(tmp).replace(" ", "");
     }
-    
     /*
      * Contains return true if the list has
      * the item passed as an argument to the method
