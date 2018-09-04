@@ -136,7 +136,7 @@ public class List {
         arr[i] = arr[i+1];
     }
     arr[arr.length - 1] = 0;
-
+    size--;
 
 }
     /*
