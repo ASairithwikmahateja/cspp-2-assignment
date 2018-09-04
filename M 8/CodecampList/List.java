@@ -88,7 +88,8 @@ public class List {
     public void add(int item) {
         //Inserts the specified element at the end of the list.
         arr = Arrays.copyOf(arr, arr.length + 1);
-        arr[arr.length - 1] = item; 
+        arr[arr.length - 1] = item;
+        size++; 
     }
 
     /*
@@ -128,7 +129,7 @@ public class List {
     // Think about what to do to the size variable.
     if (index >= size) {
         System.out.println("Invalid Position Exception");
-        return ;
+        return;
     }
     for (int i = index; i < arr.length - 1; i++) {
         arr[i] = arr[i+1];
