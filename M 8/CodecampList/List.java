@@ -89,7 +89,6 @@ public class List {
         //Inserts the specified element at the end of the list.
         arr = Arrays.copyOf(arr, arr.length + 1);
         arr[arr.length - 1] = item; 
-        System.out.println(toString());
     }
 
     /*
