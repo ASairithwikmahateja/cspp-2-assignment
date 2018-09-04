@@ -100,9 +100,7 @@ public class List {
      */
     public int size() {
         // replace the code below to implement the size method
-        if (arr.length != 0)
-            return arr.length;
-        return 0;
+        return size;
     }
 
     /*
