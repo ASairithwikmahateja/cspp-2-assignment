@@ -3,7 +3,7 @@ import java.util.Scanner;
 import java.util.Arrays;
 
 public class List {
-    //Implement all the methods mentioned to build a ListADT
+	//Implement all the methods mentioned to build a ListADT
 
     /*
      * The goal for the list is to store items.
@@ -26,8 +26,7 @@ public class List {
      * This is a hard concept to understand. Discuss with your mentor.
      *
     */
-    private int[] arr;
-
+    private int[] arr = new int[0];
     
     // declare a private int[]
     // don't create the array yet using new
@@ -52,7 +51,8 @@ public class List {
      * to be accessed by the methods that are outside of the List class.
      * 
      */
-    private int size;
+    private int size = 0;
+
     // declare a private int size
     // again, don't initialize it here
     // variable initialization should be done in the constructor
@@ -62,20 +62,16 @@ public class List {
      * class variables with some default values.
      */
     public List() {
-        size = 0;
-        arr = new int[10];
-
         // what are the two variables to be initialized here?
         // think about the private variables described above.
         // What should be the default values?
         // In the case of the list, it should be empty but
         // it should be initialized with an array size like 10
-
+        
         // Think about the initial value for size.
         // How many items do we have in the list when you create it?
         // An empty list has how many items?
         // That is the initial value to use for size.
-
     }
     
     /*
@@ -91,8 +87,8 @@ public class List {
      */
     public void add(int item) {
         //Inserts the specified element at the end of the list.
-        arr[size] = item;
-        size++;
+        arr = Arrays.copyOf(arr, arr.length + 1);
+        arr[arr.length - 1] = item; 
     }
 
     /*
@@ -104,10 +100,8 @@ public class List {
      */
     public int size() {
         // replace the code below to implement the size method
-        if (size >= 0)
-        {
-        return (size);
-        }
+        if (arr.length != 0)
+            return arr.length;
         return 0;
     }
 
@@ -132,24 +126,23 @@ public class List {
      * The method returns void (nothing)
      */
     public void remove(int index) {
-        // write the logic for remove here.
-        // Think about what to do to the size variable.
-        try {
-            for(int i = 0; i <= size; i++){
-                if(arr[i] == arr[index-1]){
-                    for(int j = i; j < arr.length - 1; j++){
-                        arr[j] = arr[j+1];
-                    }
-                    break;
+    // write the logic for remove here.
+    // Think about what to do to the size variable.
+    try {
+        for(int i = 0; i <= size; i++){
+            if(arr[i] == arr[index-1]){
+                for(int j = i; j < arr.length - 1; j++){
+                    arr[j] = arr[j+1];
                 }
+                break;
             }
-            size = size - 1;
         }
-        catch(Exception e) {
-            System.out.println("Invalid Position Exception");
-        }   
+        size = size - 1;
     }
-
+    catch(Exception e) {
+        System.out.println("Invalid Position Exception");
+    }   
+}
     /*
      * Get method has to return the items that is
      * at the index position passed as an argument to the method.
@@ -164,15 +157,11 @@ public class List {
     public int get(int index) {
         // Replace the code below to write the code for get
         try {
-        if (index < size+1) {
-            int element = arr[index];
-            return element;
-        }
-    }
-        catch(Exception e) {
-        System.out.println("Index Out of Bounds Exception");
-    }
-    return -1;
+            if (index < arr.length) {
+                return arr[index];
+            } throw new Exception();
+        } catch(Exception e) { }
+        return -1;
     }
 
     /*
@@ -198,7 +187,7 @@ public class List {
     public String toString() {
         // Replace the code below
         return Arrays.toString(arr).replace(" ","");
-    } 
+    }
     
     /*
      * Contains return true if the list has
@@ -208,12 +197,11 @@ public class List {
      */
     public boolean contains(int item) {
         // Replace the code below
-        for(int i = 0; i < arr.length; i++){
-            if(arr[i] == item){
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == item) {
                 return true;
             }
-        }
-        return false;
+        } return false;
     }
 
     /*
@@ -223,18 +211,20 @@ public class List {
      */
     public int indexOf(int item) {
         // Replace the code below
-
-        for(int i = 0; i < arr.length; i++){
-            if(arr[i] == item){
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == item) {
                 return i;
             }
-        }
-    return -1;
+        } return -1;
     }
-    public static void main(String[] args) {
+
+    public void addAll(int[] items) {
+
+    }
+
+	public static void main(final String[] args) {
         // create an object of the list to invoke methods on it
         List l = new List();
-
         // code to read the test cases input file
         Scanner stdin = new Scanner(new BufferedInputStream(System.in));
         // check if there is one more line to process
@@ -267,12 +257,16 @@ public class List {
                 System.out.println(l.indexOf(Integer.parseInt(tokens[1])));
                 break;
                 case "get":
-                System.out.println(l.get(Integer.parseInt(tokens[1])));
+                if (l.get(Integer.parseInt(tokens[1])) != -1) {
+                    System.out.println(l.get(Integer.parseInt(tokens[1])));
+                } 
                 break;
                 case "contains":
                 System.out.println(l.contains(Integer.parseInt(tokens[1])));
                 break;
+                case "addAll":
+                System.out.println();
             }
         }
-    }
+	}
 }
