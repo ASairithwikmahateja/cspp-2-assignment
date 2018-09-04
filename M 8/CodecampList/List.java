@@ -186,7 +186,7 @@ public class List {
      */
     public String toString() {
         // Replace the code below
-        return Arrays.toString(arr);
+        return Arrays.toString(arr).replace(" ","");
     }
     
     /*
