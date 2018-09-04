@@ -130,7 +130,7 @@ public class List {
     // Think about what to do to the size variable.
     try {
         for(int i = 0; i <= size; i++){
-            if(arr[i] == arr[index-1]){
+            if(arr[i] == arr[index]){
                 for(int j = i; j < arr.length - 1; j++){
                     arr[j] = arr[j+1];
                 }
