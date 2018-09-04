@@ -63,7 +63,7 @@ public class List {
      */
     public List() {
         size = 0;
-        arr = new int[10];
+        arr = new int[0];
 
         // what are the two variables to be initialized here?
         // think about the private variables described above.
