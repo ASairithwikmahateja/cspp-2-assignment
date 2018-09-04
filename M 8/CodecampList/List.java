@@ -259,9 +259,7 @@ public class List {
                 case "get":
                 if (l.get(Integer.parseInt(tokens[1])) != -1) {
                     System.out.println(l.get(Integer.parseInt(tokens[1])));
-                } else {
-                    System.out.println("Input Position Exception");
-                }
+                } 
                 break;
                 case "contains":
                 System.out.println(l.contains(Integer.parseInt(tokens[1])));
