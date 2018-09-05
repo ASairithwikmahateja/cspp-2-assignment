@@ -28,10 +28,6 @@ public class Fibonacci {
      * Look for the hint.txt if some of the testcases fail.
      */
     /**
-     * default constructor.
-     */
-    public Fibonacci() { }
-    /**
      * { function_description }.
      *
      * @param      n     int
@@ -64,7 +60,7 @@ public class Fibonacci {
  *
  * @param      args  String
  */
-	public static void main(final String[] args) {
+    public static void main(final String[] args) {
         Scanner s = new Scanner(System.in);
         int n = s.nextInt();
         System.out.println(fib(n));
