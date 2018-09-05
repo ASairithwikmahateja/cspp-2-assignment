@@ -31,6 +31,13 @@ public class Fibonacci {
      * default constructor.
      */
     public Fibonacci() { }
+    /**
+     * { function_description }
+     *
+     * @param      n     int
+     *
+     * @return     List
+     */
     public static List fib(final int n) {
         // todo - complete this method
         int[] arr = new int[n];
