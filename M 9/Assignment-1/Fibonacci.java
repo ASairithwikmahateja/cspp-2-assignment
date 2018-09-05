@@ -40,7 +40,7 @@ public class Fibonacci {
                 arr[i] = 0;
                 //System.out.println(arr[i]);
             } else if (i == 1) {
-        	    arr[i] = 1;
+                arr[i] = 1;
         	    //System.out.println(arr[i]);
             } else if (i > 1) {
                 arr[i] = arr[i - 1] + arr[i - 2];
