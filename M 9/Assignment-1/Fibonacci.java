@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.util.Arrays;
 
 /*
  * In the previous module you have created List ADT.
@@ -30,7 +29,7 @@ public class Fibonacci
     public static List fib(int n) {
         // todo - complete this method
         int[] arr = new int[n];
-        List l = new List();
+        List l = new List(n);
         for (int i = 0; i < n; i++) {
             if (i == 0) {
                 arr[i] = 0;
