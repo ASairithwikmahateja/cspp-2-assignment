@@ -16,9 +16,10 @@ import java.util.Scanner;
  * by invoking the add method provided in the List ADT.
  *
  */
-
-public class Fibonacci
-{
+/**
+ * Class for fibonacci.
+ */
+public class Fibonacci {
     /*
      * fib is a static method takes a argument n
      * n is the count of the fibonacci numbers to be generated.
@@ -26,7 +27,11 @@ public class Fibonacci
      *
      * Look for the hint.txt if some of the testcases fail.
      */
-    public static List fib(int n) {
+    /**
+     * default constructor.
+     */
+    public Fibonacci() { }
+    public static List fib(final int n) {
         // todo - complete this method
         int[] arr = new int[n];
         List l = new List(n);
@@ -34,21 +39,25 @@ public class Fibonacci
             if (i == 0) {
                 arr[i] = 0;
                 //System.out.println(arr[i]);
-            } else if(i == 1) {
+            } else if (i == 1) {
         	    arr[i] = 1;
         	    //System.out.println(arr[i]);
-            } else if(i > 1) {
+            } else if (i > 1) {
                 arr[i] = arr[i - 1] + arr[i - 2];
                 //System.out.println(arr[i]);
             }
-        } 
+        }
         for (int i = 0; i < n; i++) {
         	l.add(arr[i]);
         }
         return l;
     }
-
-	public static void main(String[] args) {
+/**
+ * { function_description }
+ *
+ * @param      args  String
+ */
+	public static void main(final String[] args) {
         Scanner s = new Scanner(System.in);
         int n = s.nextInt();
         System.out.println(fib(n));
