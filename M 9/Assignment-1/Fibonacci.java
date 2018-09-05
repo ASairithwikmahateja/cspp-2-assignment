@@ -32,7 +32,7 @@ public class Fibonacci {
      */
     public Fibonacci() { }
     /**
-     * { function_description }
+     * { function_description }.
      *
      * @param      n     int
      *
@@ -48,7 +48,7 @@ public class Fibonacci {
                 //System.out.println(arr[i]);
             } else if (i == 1) {
                 arr[i] = 1;
-        	    //System.out.println(arr[i]);
+                //System.out.println(arr[i]);
             } else if (i > 1) {
                 arr[i] = arr[i - 1] + arr[i - 2];
                 //System.out.println(arr[i]);
@@ -60,7 +60,7 @@ public class Fibonacci {
         return l;
     }
 /**
- * { function_description }
+ * { function_description }.
  *
  * @param      args  String
  */
