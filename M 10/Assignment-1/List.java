@@ -339,10 +339,14 @@ public final class List {
     	if (size == list.length) {
             resize();
     	}
-    	size++;
-    	for (int i = size; i > index; i--) {
-    		list[i] = list[i - 1];
-    	} list[index] = item;
+        if (index < 0) {
+            System.out.println("Negative Index Exception");
+        } else {
+            size++;
+            for (int i = size; i > index; i--) {
+                list[i] = list[i - 1];
+            } list[index] = item;
+        }
     }
     /* Returns the count of occurances of a given item in the list*/
     /**
