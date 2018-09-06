@@ -341,7 +341,7 @@ public final class List {
     	}
         if (index < 0) {
             System.out.println("Negative Index Exception");
-        } else {
+        } else if (index < 10) {
             size++;
             for (int i = size; i > index; i--) {
                 list[i] = list[i - 1];
