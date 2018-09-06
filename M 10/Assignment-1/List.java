@@ -180,8 +180,8 @@ public final class List {
     public void remove(final int index) {
         // write the logic for remove here.
         // Think about what to do to the size variable.
-        if(index >= 0 && index < size) {
-            for(int i = index; i < size - 1; i++) {
+        if (index >= 0 && index < size) {
+            for (int i = index; i < size - 1; i++) {
                 list[i] = list[i + 1];
             }
             size--;
@@ -202,7 +202,7 @@ public final class List {
      * number of items in the list? Would size variable be useful?
      */
     public int get(final int index) {
-        if(index < 0 || index >= size) {
+        if (index < 0 || index >= size) {
             return -1;
         } else {
             return list[index];
@@ -230,11 +230,11 @@ public final class List {
      *
      */
     public String toString() {
-        if(size == 0)
+        if (size == 0)
             return "[]";
         String str = "[";
         int i = 0;
-        for(i = 0; i < size - 1; i++) {
+        for (i = 0; i < size - 1; i++) {
             str = str + list[i] + ",";
         }
         str = str + list[i] + "]";
@@ -257,16 +257,15 @@ public final class List {
      * or -1 if this list does not contain the element.
      */
     public int indexOf(final int item) {
-        for(int i = 0; i < size; i++) {
-            if(item == list[i])
+        for (int i = 0; i < size; i++) {
+            if (item == list[i])
                 return i;
         }
         return -1;
     }
-   /*Inserts all the elements of specified int 
+   /*Inserts all the elements of specified int
     array to the end of list*/
-    public void addAll(final int items[])
-    {
+    public void addAll(final int items[]) {
         // write the logic
         if (size + items.length == list.length) {
             resize();
@@ -278,11 +277,11 @@ public final class List {
 
      /*Resizes the list to double its original length.
         The method returns void (nothing)
-     */ 
+     */
     private void resize() {
         list =  Arrays.copyOf(list, 2 * list.length);
     }
-    /*Inserts the specified element at the specified index 
+    /*Inserts the specified element at the specified index
 	by moving all the elements to the right.
         The method returns void (nothing)
      */
@@ -296,10 +295,8 @@ public final class List {
     		list[i] = list[i - 1];
     	} list[index] = item;
     }
-    
     /* Returns the count of occurances of a given item in the list*/
-    public int count(final int item)
-    {
+    public int count(final int item) {
          // write the logic
     	int cnt = 0;
     	for (int i = 0; i < size; i++) {
@@ -325,12 +322,12 @@ public final class List {
             // based on the list operation invoke the corresponding method
             switch (tokens[0]) {
                case "add":
-                if((tokens.length) == 2) {
+                if ((tokens.length) == 2) {
                 String[] t = tokens[1].split(",");
-                if(t.length == 1) {
+                if (t.length == 1) {
                     l.add(Integer.parseInt(tokens[1]));
                 } else if (t.length > 1) {
-                        l.add(Integer.parseInt(t[0]),Integer.parseInt(t[1]));
+                        l.add(Integer.parseInt(t[0]), Integer.parseInt(t[1]));
                     }
                 }
                 break;
@@ -371,6 +368,7 @@ public final class List {
                 case "contains":
                 System.out.println(l.contains(Integer.parseInt(tokens[1])));
                 break;
+                default:
             }
         }
 	}
