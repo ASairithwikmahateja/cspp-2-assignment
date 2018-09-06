@@ -329,9 +329,7 @@ public final class List {
                 String[] t = tokens[1].split(",");
                 if(t.length == 1) {
                     l.add(Integer.parseInt(tokens[1]));
-                }
-                else {
-                    if(t.length > 1)
+                } else if (t.length > 1) {
                         l.add(Integer.parseInt(t[0]),Integer.parseInt(t[1]));
                     }
                 }
@@ -340,7 +338,7 @@ public final class List {
                 System.out.println(l.count(Integer.parseInt(tokens[1])));
                 break;
                 case "addAll":
-                if(tokens.length == 2) {
+                if (tokens.length == 2) {
                 String[] t1 = tokens[1].split(",");
                 int temp[] = new int[t1.length];
                 for (int i = 0; i < temp.length; i++) {
