@@ -343,7 +343,7 @@ public class List {
             System.out.println("Index Out Of Bounds Exception");
             return null;
         }
-        */
+        */ 
         if (start >= end || (start < 0 || end < 0) || size == 0) {
             System.out.println("Index Out of Bounds Exception");
             return null;
@@ -464,7 +464,8 @@ public class List {
                     if (object != null) {
                         System.out.println(object);
                     }
-                    }
+                    break;
+                }
                 case "equals":
                     if (tokens.length == 2) {
                         String[] lt = tokens[1].split(",");
