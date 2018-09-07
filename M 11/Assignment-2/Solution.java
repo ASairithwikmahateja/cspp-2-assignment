@@ -1,9 +1,9 @@
 import java.io.BufferedInputStream;
 import java.util.Scanner;
-//A Class is implemented for Student details
+//A Class is implemented for Student details.
 class Student {
     /**
-     * { var_description }
+     * Name.
      */
 	private String name;
     /**
@@ -11,15 +11,17 @@ class Student {
      *
      * @param      name  String
      */
-	public Student(String name) {//A constructor used to initialize the instance variables
-		this.name = name;
+	public Student(final String namee) {
+    //A constructor used to initialize the instance variables
+		this.name = namee;
 	}
     /**
      * Gets the name.
      *
      * @return     The name.
      */
-	public String getName() {//Getter method which returns the value of instance variable
+	public String getName() {
+    //Getter method which returns the value of instance variable
 		return this.name;
 	}
     /**
