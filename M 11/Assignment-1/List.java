@@ -322,6 +322,9 @@ public class List {
         if (start < 0 || end > size) {
             System.out.println("Index Out Of Bounds Exception");
             return null;
+        } else if (size == 0) {
+            System.out.println("Index Out Of Bounds Exception");
+            return null;
         } else if (start == end && size < start) {
             System.out.println("Index Out Of Bounds Exception");
             return null;
@@ -354,7 +357,7 @@ public class List {
     /**
      * main method.
      *
-     * @param      args  The arguments
+     * @param      args  String
      */
     public static void main(final String[] args) {
         // create an object of the list to invoke methods on it
