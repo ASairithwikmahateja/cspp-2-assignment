@@ -30,7 +30,6 @@ public class List {
      * This is a hard concept to understand. Discuss with your mentor.
      *
     */
-    
     // declare a private int[]
     // don't create the array yet using new
     // that's the job of the List constructor
@@ -55,9 +54,8 @@ public class List {
      * So, to keep track of the size we need a variable called size
      * Again, we use private as we don't want that size variable
      * to be accessed by the methods that are outside of the List class.
-     * 
+     *
      */
-
     // declare a private int size
     // again, don't initialize it here
     // variable initialization should be done in the constructor
@@ -220,7 +218,7 @@ public class List {
         }
         str = str + list[i] + "]";
         return str;
-    } 
+    }
     /*
      * Contains return true if the list has the item passed as an argument to
      * the method So, iterate through the list and return true if the item
@@ -282,7 +280,7 @@ public class List {
      * @return     count of element.
      */
     public int count(final int item) {
-         // write the logic
+    // write the logic
         int c = 0;
         for (int i = 0; i < size; i++) {
             if (list[i] == item) {
@@ -291,10 +289,15 @@ public class List {
         } return c;
     }
     /*
-     Removes all of its elements that are contained in the specified int 
-     array.    
+     Removes all of its elements that are contained in the specified int
+     array.
     */
-     public void removeAll(int[] newArray) {
+     /**
+      * Removes all.
+      *
+      * @param      newArray  int array
+      */
+     public void removeAll(final int[] newArray) {
         // write the logic
         /*
         for (int i : newArray) {
@@ -316,7 +319,14 @@ public class List {
     "Index Out of Bounds Exception" if any of values start and end are negative
     and also if start is greater than end.
     */
-    public List subList(int start, int end) {
+    /**
+     *
+     * @param      start  int
+     * @param      end    int
+     *
+     * @return     List
+     */
+    public List subList(final int start, final int end) {
     // write the logic for subList
         List object = new List();
         /*
@@ -347,6 +357,13 @@ public class List {
     Returns a boolean indicating whether the parameter i.e a List object is
     exactly matching with the given list or not.
     */
+    /**
+     * 
+     *
+     * @param      list  list
+     *
+     * @return     boolean
+     */
     public boolean equals(final List list) {
     // Replace the code below
     return this.toString().equals(list.toString());
@@ -356,6 +373,9 @@ public class List {
     * Think about this case and make the method
     * the simpler.
     */
+    /**
+     * clear
+     */
     public void clear() {
     // write the logic for clear.
         size = 0;
