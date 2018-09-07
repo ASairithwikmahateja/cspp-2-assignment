@@ -343,7 +343,7 @@ public class List {
             System.out.println("Index Out Of Bounds Exception");
             return null;
         }
-        */ 
+        */
         if (start >= end || (start < 0 || end < 0) || size == 0) {
             System.out.println("Index Out of Bounds Exception");
             return null;
@@ -351,7 +351,8 @@ public class List {
             for (int i = start; i < end; i++) {
                 object.add(list[i]);
             }
-        } return object;
+        }
+        return object;
     }
     /*
     Returns a boolean indicating whether the parameter i.e a List object is
@@ -456,8 +457,10 @@ public class List {
                         l.removeAll(a);
                     }
                 break;
-                case "subList": {
-                    if (tokens.length != 2) break;
+                case "subList":
+                    if (tokens.length != 2) {
+                        break;
+                    }
                     String[] arrstring3 = tokens[1].split(",");
                     List object = l.subList(Integer.parseInt(arrstring3[0]),
                             Integer.parseInt(arrstring3[1]));
@@ -465,7 +468,6 @@ public class List {
                         System.out.println(object);
                     }
                     break;
-                }
                 case "equals":
                     if (tokens.length == 2) {
                         String[] lt = tokens[1].split(",");
