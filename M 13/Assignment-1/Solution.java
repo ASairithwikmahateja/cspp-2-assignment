@@ -91,11 +91,11 @@ class Set {
     public Set retainAll(final int[] items) {
         Set set = new Set();
         for (int i = 0; i < this.arr.length; i++) {
-        	for (int j = 0; j < items.length; j++) {
+            for (int j = 0; j < items.length; j++) {
                 if (this.arr[i] == items[j]) {
                     set.add(arr[i]);
         	    }
-        	}
+            }
         } return set;
     }
     /**
@@ -103,15 +103,15 @@ class Set {
      * @return     String representation of the object.
      */
     public String toString() {
-    	if (size == 0) {
-    		return "{}";
-    	}
-    	String s = "{";
-    	int i;
-    	for (i = 0; i < size - 1; i++) {
-    		s = s + arr[i] + "," + " ";
-    	} s = s + arr[i] + "}";
-    	return s;
+        if (size == 0) {
+    	    return "{}";
+        }
+        String s = "{";
+        int i;
+        for (i = 0; i < size - 1; i++) {
+    	    s = s + arr[i] + "," + " ";
+        } s = s + arr[i] + "}";
+        return s;
     }
     /**
      *
@@ -124,11 +124,10 @@ class Set {
         final int ten2 = 10;
         int[][] a = new int[ten1][ten2];
         for (int i = 0; i < this.arr.length; i++) {
-        	for (int j = 0; j < t.arr.length; j++) {
+            for (int j = 0; j < t.arr.length; j++) {
                 a[i][j] = arr[i];
-        	}
-        }
-        return a;
+            }
+        } return a;
     }
 }
 /**
