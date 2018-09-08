@@ -55,7 +55,7 @@ class Set {
     public void add(final int item) {
         if (!contains(item)) {
             arr[size++] = item;
-	    }
+        }
     }
     /**
      *
