@@ -73,13 +73,13 @@ class Set {
      * @return     Set
      */
     public Set intersection(final Set t) {
-    	Set set = new Set();
+        Set set = new Set();
         for (int i = 0; i < this.arr.length; i++) {
-        	for (int j = 0; j < t.arr.length; j++) {
+            for (int j = 0; j < t.arr.length; j++) {
                 if (this.arr[i] == t.arr[j] & this.arr[i] != 0) {
                     set.add(arr[i]);
         	    }
-        	}
+            }
         } return set;
     }
     /**
