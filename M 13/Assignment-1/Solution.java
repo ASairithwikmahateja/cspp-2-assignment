@@ -16,19 +16,15 @@ import java.util.Arrays;
  * @author : Mahateja
  */
 class Set {
-	/**
+    /**
 	 * Integer array.
 	 */
-	public int[] arr = new int[10];
+    final int ten = 10;
+	private int[] arr = new int[ten];
 	/**
 	 * size.
 	 */
 	private int size = 0;
-	// Set(int capacity) {
- //    int[] arr = new int[capacity];
- //    size = 0;
-	// }
-	 
     /**
      *
      * @return     size
@@ -73,7 +69,7 @@ class Set {
      *
      * @return     Set
      */
-    public Set intersection(Set t) {
+    public Set intersection(final Set t) {
     	Set set = new Set();
         for (int i = 0; i < this.arr.length; i++) {
         	for (int j = 0; j < t.arr.length; j++) {
@@ -110,8 +106,15 @@ class Set {
     	} s = s + arr[i] + "}";
     	return s;
     }
-    public int[][] cartesianProduct(Set t) {
-        int[][] a = new int[10][10];
+    /**
+     *
+     * @param      t     Set
+     *
+     * @return     int array
+     */
+    public int[][] cartesianProduct(final Set t) {
+        final int ten = 10;
+        int[][] a = new int[ten][ten];
         for (int i = 0; i < this.arr.length; i++) {
         	for (int j = 0; j < t.arr.length; j++) {
                 a[i][j] = arr[i];
