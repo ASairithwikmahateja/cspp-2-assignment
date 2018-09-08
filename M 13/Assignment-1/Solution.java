@@ -94,7 +94,7 @@ class Set {
             for (int j = 0; j < items.length; j++) {
                 if (this.arr[i] == items[j]) {
                     set.add(arr[i]);
-        	    }
+                }
             }
         } return set;
     }
