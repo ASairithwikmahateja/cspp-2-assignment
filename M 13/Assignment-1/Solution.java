@@ -106,7 +106,7 @@ class Set {
     	String s = "{";
     	int i;
     	for (i = 0; i < size - 1; i++) {
-    		s = s + arr[i] + ",";
+    		s = s + arr[i] + "," + " ";
     	} s = s + arr[i] + "}";
     	return s;
     }
