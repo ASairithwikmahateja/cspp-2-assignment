@@ -16,6 +16,9 @@ import java.util.Arrays;
  * @author : Mahateja
  */
 class Set {
+	/**
+	 * ten.
+	 */
     private final int ten = 10;
     /**
      * Integer array.
@@ -30,15 +33,15 @@ class Set {
      * @return     size
      */
     public int size() {
-		return size;
+        return size;
     }
-	/**
-	 *
-	 * @param      item  The item
-	 *
-	 * @return     boolean
-	 */
-	public boolean contains(final int item) {
+    /**
+     *
+     * @param      item  The item
+     *
+     * @return     boolean
+     */
+    public boolean contains(final int item) {
         for (int i = 0; i < size; i++) {
         	if (item == arr[i]) {
         		return true;
