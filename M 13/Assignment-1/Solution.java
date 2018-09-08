@@ -53,7 +53,7 @@ class Set {
      * @param      item  The item
      */
     public void add(final int item) {
-	    if (!contains(item)) {
+        if (!contains(item)) {
             arr[size++] = item;
 	    }
     }
@@ -120,8 +120,9 @@ class Set {
      * @return     int array
      */
     public int[][] cartesianProduct(final Set t) {
-        final int ten = 10;
-        int[][] a = new int[ten][ten];
+        final int ten1 = 10;
+        final int ten2 = 10;
+        int[][] a = new int[ten1][ten2];
         for (int i = 0; i < this.arr.length; i++) {
         	for (int j = 0; j < t.arr.length; j++) {
                 a[i][j] = arr[i];
