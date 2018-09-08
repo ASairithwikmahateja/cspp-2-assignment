@@ -104,7 +104,7 @@ class Set {
      */
     public String toString() {
         if (size == 0) {
-    	    return "{}";
+            return "{}";
         }
         String s = "{";
         int i;
