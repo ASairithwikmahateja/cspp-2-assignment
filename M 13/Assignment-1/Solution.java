@@ -43,28 +43,28 @@ class Set {
      */
     public boolean contains(final int item) {
         for (int i = 0; i < size; i++) {
-        	if (item == arr[i]) {
-        		return true;
-        	}
+            if (item == arr[i]) {
+                return true;
+            }
         } return false;
-	}
-	/**
-	 *
-	 * @param      item  The item
-	 */
-	public void add(final int item) {
-		if (!contains(item)) {
+    }
+    /**
+     *
+     * @param      item  The item
+     */
+    public void add(final int item) {
+	    if (!contains(item)) {
             arr[size++] = item;
-		}
+	    }
     }
     /**
      *
      * @param      items  The items
      */
     public void add(final int[] items) {
-    	for (int i:items) {
-    		add(i);
-    	}
+        for (int i:items) {
+    	    add(i);
+        }
     }
     /**
      *
