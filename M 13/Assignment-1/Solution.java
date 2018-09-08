@@ -16,22 +16,22 @@ import java.util.Arrays;
  * @author : Mahateja
  */
 class Set {
+    private final int ten = 10;
     /**
-	 * Integer array.
-	 */
-    final int ten = 10;
-	private int[] arr = new int[ten];
-	/**
-	 * size.
-	 */
-	private int size = 0;
+     * Integer array.
+     */
+    private int[] arr = new int[ten];
+    /**
+    * size.
+    */
+    private int size = 0;
     /**
      *
      * @return     size
      */
-	public int size() {
+    public int size() {
 		return size;
-	}
+    }
 	/**
 	 *
 	 * @param      item  The item
@@ -73,7 +73,7 @@ class Set {
     	Set set = new Set();
         for (int i = 0; i < this.arr.length; i++) {
         	for (int j = 0; j < t.arr.length; j++) {
-                if(this.arr[i] == t.arr[j] & this.arr[i] != 0) {
+                if (this.arr[i] == t.arr[j] & this.arr[i] != 0) {
                     set.add(arr[i]);
         	    }
         	}
@@ -89,12 +89,16 @@ class Set {
         Set set = new Set();
         for (int i = 0; i < this.arr.length; i++) {
         	for (int j = 0; j < items.length; j++) {
-                if(this.arr[i] == items[j]) {
+                if (this.arr[i] == items[j]) {
                     set.add(arr[i]);
         	    }
         	}
         } return set;
     }
+    /**
+     *
+     * @return     String representation of the object.
+     */
     public String toString() {
     	if (size == 0) {
     		return "{}";
