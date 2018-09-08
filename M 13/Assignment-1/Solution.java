@@ -16,9 +16,9 @@ import java.util.Arrays;
  * @author : Mahateja
  */
 class Set {
-     /**
-	 * ten.
-	 */
+    /**
+     * ten.
+     */
     private final int ten = 10;
     /**
      * Integer array.
