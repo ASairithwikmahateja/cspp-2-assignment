@@ -45,7 +45,7 @@ public class Set {
     /**
      * resize the set by double, when it is full.
      */
-    private void resize() {
+    public void resize() {
         set = java.util.Arrays.copyOf(set, size * 2);
     }
 
