@@ -86,7 +86,7 @@ public class Solution {
      *
      * @param      index                     The index
      *
-     * @throws     InvalidPositionException  
+     * @throws     InvalidPositionException
      */
     public void remove(final int index) throws InvalidPositionException {
         if (index >= 0 && index < size) {
@@ -103,7 +103,7 @@ public class Solution {
      *
      * @param      index  The index
      *
-     * @return     int 
+     * @return     int
      */
     public int get(final int index) {
         // Replace the code below to write the code for get
