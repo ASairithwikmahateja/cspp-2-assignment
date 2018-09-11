@@ -32,11 +32,11 @@ public class Solution {
     /**
      * int array.
      */
-    public int[] arr;
+    private int[] arr;
     /**
      * int size.
      */
-    public int size;
+    private int size;
     /**
      * Constructs the object.
      */
@@ -86,7 +86,7 @@ public class Solution {
      *
      * @param      index                     The index
      *
-     * @throws     InvalidPositionException
+     * @throws     InvalidPositionException  invalid
      */
     public void remove(final int index) throws InvalidPositionException {
         if (index >= 0 && index < size) {
@@ -180,7 +180,7 @@ public class Solution {
      *
      * @param      newArray                  The new array
      *
-     * @throws     InvalidPositionException
+     * @throws     InvalidPositionException  invalid
      */
     public void removeAll(final int[] newArray)
     throws InvalidPositionException {
