@@ -60,10 +60,10 @@ class Patron {
     /**
      * Sets the name of person.
      *
-     * @param      nameinp  The nameinp
+     * @param      nameinput  The nameinput
      */
-    void setName(final String nameinp) {
-        this.name = nameinp;
+    void setName(final String nameinput) {
+        this.name = nameinput;
     }
 
     /**
@@ -78,10 +78,10 @@ class Patron {
     /**
      * Sets the phonenum of person.
      *
-     * @param      phonenuminp  The nameinp
+     * @param      phonenuminput  The nameinput
      */
-    void setPhonenum(final String phonenuminp) {
-        this.phonenum = phonenuminp;
+    void setPhonenum(final String phonenuminput) {
+        this.phonenum = phonenuminput;
     }
 
     /**
@@ -96,10 +96,10 @@ class Patron {
     /**
      * Sets the bookingtime.
      *
-     * @param      bookingtimeinp  The bookingtime
+     * @param      bookingtimeinput  The bookingtime
      */
-    void setBookingtime(final String bookingtimeinp) {
-        this.bookingtime = bookingtimeinp;
+    void setBookingtime(final String bookingtimeinput) {
+        this.bookingtime = bookingtimeinput;
     }
 
 //moviename
@@ -116,14 +116,11 @@ class Patron {
     /**
      * Sets the moviename.
      *
-     * @param      movienameinp  The moviename
+     * @param      movienameinput  The moviename
      */
-    void setMoviename(final String movienameinp) {
-        this.moviename = movienameinp;
+    void setMoviename(final String movienameinput) {
+        this.moviename = movienameinput;
     }
-
-
-
 }
 
 /**
@@ -190,16 +187,11 @@ class Show {
     /**
      * Sets the showdatetime.
      *
-     * @param      datetimeinp  The datetimeinp
+     * @param      datetimeinput  The datetimeinput
      */
-    void setShowdatetime(final String datetimeinp) {
-        this.showdatetime = datetimeinp;
+    void setShowdatetime(final String datetimeinput) {
+        this.showdatetime = datetimeinput;
     }
-
-
-
-
-
 
     /**
      * Determines if it has tickets.
@@ -351,8 +343,6 @@ class BookYourShow {
         if (count == shows.size() || dateflag) {
             System.out.println("No show");
         }
-
-
     }
 
     /**
@@ -449,10 +439,7 @@ public final class Solution {
                 break;
             default:
                 break;
-
             }
         }
     }
 }
-
-
