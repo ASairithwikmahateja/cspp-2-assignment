@@ -1,7 +1,13 @@
 import java.util.Scanner;
 
 class Quiz {
-  
+    String choice;
+    Quiz() {
+
+    }
+    Quiz(final String choice) {
+        this.choice = choice;
+    } 
 }
 /**
  * Solution class for code-eval.
@@ -38,7 +44,10 @@ public final class Solution {
                 loadQuestions(s, q, Integer.parseInt(tokens[1]));
                 break;
                 case "START_QUIZ":
-                startQuiz(s, q, Integer.parseInt(tokens[1]));
+                System.out.println("|------------|");
+                System.out.println("| Start Quiz |");
+                System.out.println("|------------|");
+        	    startQuiz(s, q, Integer.parseInt(tokens[1]));
                 break;
                 case "SCORE_REPORT":
                 System.out.println("|--------------|");
@@ -64,12 +73,27 @@ public final class Solution {
         // add the question objects to the quiz class
         if (questionCount >= 1) {
         	System.out.println(questionCount + " are added to the quiz");
-        	System.out.println("|------------|");
-            System.out.println("| Start Quiz |");
-            System.out.println("|------------|");
-        	startQuiz(s, quiz, questionCount);
         } else {
         	System.out.println("Quiz doesnot have enough questions");
+        }
+    }
+
+    public static void displayQuiz(final int questionCount) {
+    	int constant = questionCount;
+        int cnt = 1;
+        while (constant > 0) {
+        	Scanner s = new Scanner(System.in);
+            String[] str = s.nextLine().split(":");
+            int i;
+            for (i = 0; i < str.length - 4; i++) {
+                System.out.println(str[i] + "(" + cnt + ")");
+                cnt = cnt + 1;
+            } String[] temstr = str[i].split(",");
+            int j;
+            for (j = 0; j < temstr.length - 1; j++) {
+        	    System.out.print(temstr[j] + "\t");
+            } System.out.print(temstr[j]);
+        constant--;
         }
     }
 
@@ -84,21 +108,10 @@ public final class Solution {
         // write your code here to display the quiz questions
         // read the user responses from the console
         // store the user respones in the quiz object
-        int constant = answerCount;
-        	int cnt = 1;
-        	while (constant > 0) {
-        	    String[] str = s.nextLine().split(":");
-        	    int i;
-        	    for (i = 0; i < str.length - 4; i++) {
-                    System.out.println(str[i] + "(" + cnt + ")");
-                    cnt = cnt + 1;
-        	    } String[] temstr = str[i].split(",");
-        	    int j;
-        	    for (j = 0; j < temstr.length - 1; j++) {
-        		    System.out.print(temstr[j] + "\t");
-        	    } System.out.print(temstr[j]);
-            constant--;
-            }
+        displayQuiz(answerCount);
+        if (s.equals(quiz.choice)) {
+            System.out.println(true);
+        }
     }
 
     /**
