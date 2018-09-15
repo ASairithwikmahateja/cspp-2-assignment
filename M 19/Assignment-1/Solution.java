@@ -80,7 +80,7 @@ public final class Solution {
                 System.out.println("|------------|");
                 System.out.println("| Start Quiz |");
                 System.out.println("|------------|");
-        	    startQuiz(s, q, Integer.parseInt(tokens[1]));
+                startQuiz(s, q, Integer.parseInt(tokens[1]));
                 break;
                 case "SCORE_REPORT":
                 System.out.println("|--------------|");
@@ -112,7 +112,11 @@ public final class Solution {
         	System.out.println("Quiz doesnot have enough questions");
         }
     }
-
+    /**
+     *
+     * @param      s              Scanner
+     * @param      questionCount  The question count
+     */
     public static void displayQuiz(final Scanner s, final int questionCount) {
     	int constant = questionCount;
         int cnt = 1;
@@ -160,12 +164,15 @@ public final class Solution {
         Scanner s = new Scanner(System.in);
         String[] str = s.nextLine().split(" ");
         if (quiz.getchoice().equals(str[1])) {
-            System.out.println("Correct Answer!" + " - " + "Marks Awarded:" + Integer.parseInt(str[1]));
+            System.out.println("Correct Answer!" +
+                " - " + "Marks Awarded:" + Integer.parseInt(str[1]));
             totalscore += Integer.parseInt(str[1]);
         } else {
-            System.out.println("Wrong Answer!" + " - " + "Penalty:" + Integer.parseInt(str[1]));
+            System.out.println("Wrong Answer!" +
+                " - " + "Penalty:" + Integer.parseInt(str[1]));
             totalscore -= Integer.parseInt(str[1]);
-        } if (totalscore < 0) {
+        }
+        if (totalscore < 0) {
             System.out.println("Invalid max marks");
         } else {
             System.out.println("Invalid Penalty");
@@ -173,3 +180,4 @@ public final class Solution {
         System.out.println("Total Score:" + totalscore);
     }
 }
+
