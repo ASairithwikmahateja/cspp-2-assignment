@@ -20,8 +20,8 @@ class Quiz {
     /**
      * Constructs the object.
      *
-     * @param      choice  The choice
-     * @param      score   The score
+     * @param      choicee  The choice
+     * @param      scoree   The score
      */
     Quiz(final String choicee, final int scoree) {
         this.choice = choicee;
@@ -29,7 +29,7 @@ class Quiz {
     }
     /**
      *
-     * @param      choice  The choice
+     * @param      choicee  The choice
      */
     public void setchoice(final String choicee) {
         this.choice = choicee;
@@ -118,7 +118,8 @@ public final class Solution {
         int cnt = 1;
         while (constant > 0) {
             String[] str = s.nextLine().split(":");
-            int i, four = 4;
+            int i;
+            final int four = 4;
             for (i = 0; i < str.length - four; i++) {
                 System.out.println(str[i] + "(" + cnt + ")");
                 cnt = cnt + 1;
@@ -138,7 +139,8 @@ public final class Solution {
      * @param      quiz         The quiz object
      * @param      answerCount  The answer count
      */
-    public static void startQuiz(final Scanner s, final Quiz quiz, final int answerCount) {
+    public static void startQuiz(final Scanner s,
+     final Quiz quiz, final int answerCount) {
         // write your code here to display the quiz questions
         // read the user responses from the console
         // store the user respones in the quiz object
@@ -147,7 +149,7 @@ public final class Solution {
     }
 
     /**
-     * Displays the score report
+     * Displays the score report.
      *
      * @param      quiz     The quiz object
      */
@@ -159,7 +161,7 @@ public final class Solution {
         String[] str = s.nextLine().split(" ");
         if (quiz.getchoice().equals(str[1])) {
             System.out.println("Correct Answer!" + " - " + "Marks Awarded:" + Integer.parseInt(str[1]));
-            totalscore += Integer.parseInt(str[1]); 
+            totalscore += Integer.parseInt(str[1]);
         } else {
             System.out.println("Wrong Answer!" + " - " + "Penalty:" + Integer.parseInt(str[1]));
             totalscore -= Integer.parseInt(str[1]);
