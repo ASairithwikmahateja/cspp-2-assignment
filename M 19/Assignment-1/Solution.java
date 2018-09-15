@@ -6,8 +6,11 @@ class Quiz {
     /**
      * Choice.
      */
-    public String choice;
-    public int score;
+    private String choice;
+    /**
+     * Score.
+     */
+    private int score;
     /**
      * Constructs the object.
      */
@@ -20,16 +23,16 @@ class Quiz {
      * @param      choice  The choice
      * @param      score   The score
      */
-    Quiz(final String choice) {
-        this.choice = choice;
-        this.score = score;
+    Quiz(final String choicee, final int scoree) {
+        this.choice = choicee;
+        this.score = scoree;
     }
     /**
      *
      * @param      choice  The choice
      */
-    public void setchoice(final String choice) {
-        this.choice = choice;
+    public void setchoice(final String choicee) {
+        this.choice = choicee;
     }
     /**
      *
@@ -97,7 +100,8 @@ public final class Solution {
      * @param      quiz           The quiz object
      * @param      questionCount  The question count
      */
-    public static void loadQuestions(final Scanner s, final Quiz quiz, final int questionCount) {
+    public static void loadQuestions(final Scanner s,
+     final Quiz quiz, final int questionCount) {
         // write your code here to read the questions from the console
         // tokenize the question line and create the question object
         // add the question objects to the quiz class
@@ -114,8 +118,8 @@ public final class Solution {
         int cnt = 1;
         while (constant > 0) {
             String[] str = s.nextLine().split(":");
-            int i;
-            for (i = 0; i < str.length - 4; i++) {
+            int i, four = 4;
+            for (i = 0; i < str.length - four; i++) {
                 System.out.println(str[i] + "(" + cnt + ")");
                 cnt = cnt + 1;
             } String[] temstr = str[i].split(",");
