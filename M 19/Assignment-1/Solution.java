@@ -164,12 +164,12 @@ public final class Solution {
         Scanner s = new Scanner(System.in);
         String[] str = s.nextLine().split(" ");
         if (quiz.getchoice().equals(str[1])) {
-            System.out.println("Correct Answer!" +
-                " - " + "Marks Awarded:" + Integer.parseInt(str[1]));
+            System.out.println("Correct Answer!"
+                + " - " + "Marks Awarded:" + Integer.parseInt(str[1]));
             totalscore += Integer.parseInt(str[1]);
         } else {
-            System.out.println("Wrong Answer!" +
-                " - " + "Penalty:" + Integer.parseInt(str[1]));
+            System.out.println("Wrong Answer!"
+                + " - " + "Penalty:" + Integer.parseInt(str[1]));
             totalscore -= Integer.parseInt(str[1]);
         }
         if (totalscore < 0) {
