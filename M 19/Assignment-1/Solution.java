@@ -109,9 +109,6 @@ public final class Solution {
         // read the user responses from the console
         // store the user respones in the quiz object
         displayQuiz(answerCount);
-        if (s.equals(quiz.choice)) {
-            System.out.println(true);
-        }
     }
 
     /**
