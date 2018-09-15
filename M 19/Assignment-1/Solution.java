@@ -1,9 +1,13 @@
 import java.util.Scanner;
-
+/**
+ * Class for quiz.
+ */
 class Quiz {
-    String choice;
+    /**
+     * choice.
+     */
+    private String choice;
     Quiz() {
-
     }
     Quiz(final String choice) {
         this.choice = choice;
@@ -78,11 +82,10 @@ public final class Solution {
         }
     }
 
-    public static void displayQuiz(final int questionCount) {
+    public static void displayQuiz(final Scanner s, final int questionCount) {
     	int constant = questionCount;
         int cnt = 1;
         while (constant > 0) {
-        	Scanner s = new Scanner(System.in);
             String[] str = s.nextLine().split(":");
             int i;
             for (i = 0; i < str.length - 4; i++) {
@@ -108,7 +111,7 @@ public final class Solution {
         // write your code here to display the quiz questions
         // read the user responses from the console
         // store the user respones in the quiz object
-        displayQuiz(answerCount);
+        displayQuiz(s, answerCount);
     }
 
     /**
