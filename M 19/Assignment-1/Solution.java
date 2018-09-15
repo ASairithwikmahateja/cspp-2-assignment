@@ -4,14 +4,40 @@ import java.util.Scanner;
  */
 class Quiz {
     /**
-     * choice.
+     * Choice.
      */
-    private String choice;
+    public String choice;
+    public int score;
+    /**
+     * Constructs the object.
+     */
     Quiz() {
+
     }
+    /**
+     * Constructs the object.
+     *
+     * @param      choice  The choice
+     * @param      score   The score
+     */
     Quiz(final String choice) {
         this.choice = choice;
-    } 
+        this.score = score;
+    }
+    /**
+     *
+     * @param      choice  The choice
+     */
+    public void setchoice(final String choice) {
+        this.choice = choice;
+    }
+    /**
+     *
+     * @return     choice
+     */
+    public String getchoice() {
+        return this.choice;
+    }
 }
 /**
  * Solution class for code-eval.
@@ -77,6 +103,7 @@ public final class Solution {
         // add the question objects to the quiz class
         if (questionCount >= 1) {
         	System.out.println(questionCount + " are added to the quiz");
+            displayQuiz(s, questionCount);
         } else {
         	System.out.println("Quiz doesnot have enough questions");
         }
@@ -111,7 +138,8 @@ public final class Solution {
         // write your code here to display the quiz questions
         // read the user responses from the console
         // store the user respones in the quiz object
-        displayQuiz(s, answerCount);
+        String[] str = s.nextLine().split(" ");
+        quiz.setchoice(str[0]);
     }
 
     /**
@@ -121,5 +149,21 @@ public final class Solution {
      */
     public static void displayScore(final Quiz quiz) {
         // write your code here to display the score report
+        Quiz q = new Quiz();
+        int totalscore = 0;
+        Scanner s = new Scanner(System.in);
+        String[] str = s.nextLine().split(" ");
+        if (quiz.getchoice().equals(str[1])) {
+            System.out.println("Correct Answer!" + " - " + "Marks Awarded:" + Integer.parseInt(str[1]));
+            totalscore += Integer.parseInt(str[1]); 
+        } else {
+            System.out.println("Wrong Answer!" + " - " + "Penalty:" + Integer.parseInt(str[1]));
+            totalscore -= Integer.parseInt(str[1]);
+        } if (totalscore < 0) {
+            System.out.println("Invalid max marks");
+        } else {
+            System.out.println("Invalid Penalty");
+        }
+        System.out.println("Total Score:" + totalscore);
     }
 }
