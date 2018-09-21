@@ -109,16 +109,13 @@ class StringMatching {
 	double compute() {
 		
 		double lcs = 0;
-        int count = 0;
+		
 		for (String i : this.doc1) {
 			Pattern p = Pattern.compile(i,Pattern.CASE_INSENSITIVE);
 			Matcher m = p.matcher(Arrays.toString(this.doc2).replace("[","").replace("]","").replace(",",""));
 			
 			while (m.find()) {
-                count++;
-				if (lcs < i.length()){
-                    lcs = i.length();
-                }
+				lcs += 2;
 			}
 			
 		}
@@ -126,7 +123,7 @@ class StringMatching {
 		double length = Arrays.toString(this.doc1).replace("[","").replace("]","").replace(",","").length() +
 						Arrays.toString(this.doc2).replace("[","").replace("]","").replace(",","").length();
 		
-		return lcs * count * 100 / length;
+		return lcs * 2* 100 / length;
 	}
 	
 	
@@ -203,5 +200,12 @@ class Solution {
             
             return;
         }
+
+        System.out.println("empty directory");
 	}
 }
+
+
+
+
+
