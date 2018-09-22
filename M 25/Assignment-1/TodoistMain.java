@@ -97,6 +97,13 @@ class Todoist {
         // tk[1] = number;
         return tk;
     }
+
+    public int totalTime4Completion() { 
+        int time = 0;
+        Task[] tk = new Task[30];
+        // time += Integer.parseInt(tk[3]);
+        return time;
+    }
  
 }
 /**
@@ -132,9 +139,9 @@ public class TodoistMain {
                     Task[] tasks = todo.getNextTask(tokens[1], n);
                     System.out.println(Arrays.deepToString(tasks));
                 break;
-                // case "total-time":
-                    // System.out.println(todo.totalTime4Completion());
-                // break;
+                case "total-time":
+                    System.out.println(todo.totalTime4Completion());
+                break;
                 default:
                 break;
             }
