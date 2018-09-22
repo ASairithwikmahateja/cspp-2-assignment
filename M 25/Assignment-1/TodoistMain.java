@@ -92,7 +92,9 @@ class Todoist {
     }
 
     public Task[] getNextTask(String personname, int number) {
-        Task[] tk = new Task[20];
+        Task[] tk = new Task[2];
+        // tk[0] = getNextTask(personname);
+        // tk[1] = number;
         return tk;
     }
  
