@@ -5,27 +5,27 @@ import java.util.Arrays;
   * write your code below this comment
   */
 class Task {
-	
-	String title;
-	String assignedTo;
-	int timeToComplete;
-	boolean important;
-	boolean urgent;
-	String status;
+    
+    String title;
+    String assignedTo;
+    int timeToComplete;
+    boolean important;
+    boolean urgent;
+    String status;
     
     Task(final String title, String assignedTo,
-    	int timeToComplete, boolean important, boolean urgent, String status) {
+        int timeToComplete, boolean important, boolean urgent, String status) {
     
-    	this.title = title;
-    	this.assignedTo = assignedTo;
-    	this.timeToComplete = timeToComplete;
-    	this.important = important;
-    	this.urgent = urgent;
-    	this.status = status; 
+        this.title = title;
+        this.assignedTo = assignedTo;
+        this.timeToComplete = timeToComplete;
+        this.important = important;
+        this.urgent = urgent;
+        this.status = status; 
     }
 
-	public String toString() {
-		String str = "";
+    public String toString() {
+        String str = "";
         String imp = "";
         String urg = "";
         if (title.length() == 0) {
@@ -49,7 +49,7 @@ class Task {
         str = title + ", " + assignedTo + ", " + timeToComplete + ", "
             + imp + ", " + urg +  ", " + status;        
         return str;
-	}
+    }
 }
 class Todoist {
     
@@ -75,17 +75,26 @@ class Todoist {
         return st;
     }
     
-//     public Task getNextTask(String personname) {
-//         Task tk;
-//         // if (personname.equals(tk)) {
-        
-//         // }
-//         return tk;
-//     }
-//     public Task[] getNextTask(String perrsonname, int number) {
-//         Task[] tk = new Task[20];
-//         return tk;
-//     }
+    public Task getNextTask(String personname) {
+        int flag = 0;
+        Task[] tk = new Task[30];
+        int i;
+        for (i = 0; i < tk.length; i++) {
+        if (personname.equals(tskarr[2])) {
+            if (tskarr[6].equals("todo") & tskarr[4].equals("Important") & tskarr[5].equals("Urgent")) {
+                flag = 1;
+                }
+        }
+    }
+    if (flag != 1)
+        return null;
+    return tk[i - 1];
+    }
+
+    public Task[] getNextTask(String personname, int number) {
+        Task[] tk = new Task[20];
+        return tk;
+    }
  
 }
 /**
@@ -113,14 +122,14 @@ public class TodoistMain {
                 case "print-todoist":
                     System.out.println(todo.toStringist());
                 break;
-                // case "get-next":
-                //     System.out.println(todo.getNextTask(tokens[1]));
-                // break;
-                // case "get-next-n":
-                //     int n = Integer.parseInt(tokens[2]);
-                //     Task[] tasks = todo.getNextTask(tokens[1], n);
-                //     System.out.println(Arrays.deepToString(tasks));
-                // break;
+                case "get-next":
+                    System.out.println(todo.getNextTask(tokens[1]));
+                break;
+                case "get-next-n":
+                    int n = Integer.parseInt(tokens[2]);
+                    Task[] tasks = todo.getNextTask(tokens[1], n);
+                    System.out.println(Arrays.deepToString(tasks));
+                break;
                 // case "total-time":
                     // System.out.println(todo.totalTime4Completion());
                 // break;
