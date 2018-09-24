@@ -53,10 +53,7 @@ class BagOfWords {
 			if(!seq.containsKey(i.toLowerCase())) {
 				seq.put(i.toLowerCase(), countt);
 			}
-		}
-		
-		//System.out.println(seq);
-		return seq;
+		} return seq;
 	}
 	
 	double euclideanNorm(HashMap<String, Integer> seq) {
@@ -157,55 +154,19 @@ class Solution {
             } catch (IOException e ) {
             	
             }
-            
-            /*
-            ArrayList<String> tmpp2 = new ArrayList<String>();
-        	tmpp2.add("");
-        	*/
-            
-            
             for (String inp : docs) {
-            	/*inp = inp.replaceAll("[^a-zA-Z0-9_ ]", " ");
-            	*/
-                String[] s1 = inp.split(" ");
-            	/*
-            	ArrayList<String> tmpp = new ArrayList<String>(Arrays.asList(s1));
-            	tmpp.removeAll(tmpp2);
-            	
-            	s1 = (String[]) tmpp.toArray(new String[0]); 
-            	
-            	System.out.println(Arrays.toString(s1));
-            	*/
+            	String[] s1 = inp.split(" ");
             	for (String j : docs) {
-            		/*j = j.replaceAll("[^a-zA-Z0-9_ ]", " ");
-                	*/
-                    
-                	String[] s2 = j.split(" ");
-                	/*
-                	tmpp = new ArrayList<String>(Arrays.asList(s2));
-           
-                	tmpp.removeAll(tmpp2);
-                	
-                	s2 = (String[]) tmpp.toArray(new String[0]); 
-                	*/
-            		BagOfWords bw = new BagOfWords(s1,s2);
+            		String[] s2 = j.split(" ");
+                	BagOfWords bw = new BagOfWords(s1,s2);
             		
             		double result = bw.computeFrequency();
             		System.out.print(Math.round(result * 100));
                     System.out.print(" " + "\t");
             	}
                 System.out.println();
-            }
-            
-            
-            return;
+            } return;
         }
-
         System.out.println("empty directory");
 	}
 }
-
-
-
-
-
